@@ -1,0 +1,35 @@
+2026-07-15 12:25:40,927 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 12:25:42,013 [main] INFO  com.erp.baseclass.BaseClass - Login test Failed
+2026-07-15 12:25:42,199 [main] INFO  com.erp.baseclass.BaseClass - Screenshot Captured:D:\AutomationFramework\UPAutomationFramework/Screenshots/loginTest_20260715122542.png
+2026-07-15 12:25:42,357 [main] INFO  com.erp.baseclass.BaseClass - Screenshot Captured:D:\AutomationFramework\UPAutomationFramework/Screenshots/loginTest_20260715122542.png
+2026-07-15 12:25:42,622 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 13:12:35,576 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 13:12:49,649 [main] INFO  com.erp.baseclass.BaseClass - Login test Failed
+2026-07-15 13:12:50,277 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 13:27:29,900 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 13:27:43,576 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 13:27:44,079 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 13:59:43,097 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 13:59:52,175 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 13:59:52,669 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 14:00:56,806 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 14:01:10,599 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 14:01:11,036 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 14:57:21,254 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 14:57:29,208 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 14:57:29,212 [main] INFO  com.erp.baseclass.BaseClass - Login Test Passed
+2026-07-15 14:57:29,465 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 15:14:05,932 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 15:14:13,801 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 15:14:13,803 [main] INFO  com.erp.baseclass.BaseClass - Login Test Passed
+2026-07-15 15:14:14,028 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 15:33:10,055 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 15:33:16,347 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 15:33:16,365 [main] INFO  com.erp.baseclass.BaseClass - Login Test Passed
+2026-07-15 15:33:16,663 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 15:34:23,210 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 15:34:24,196 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 15:34:24,716 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-15 15:36:31,886 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-15 15:36:39,617 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-15 15:36:40,121 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
