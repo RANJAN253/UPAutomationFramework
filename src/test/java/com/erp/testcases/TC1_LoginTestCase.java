@@ -21,6 +21,8 @@ public class TC1_LoginTestCase extends BaseClass
         logger.info("=========== LOGIN TEST STARTED ===========");
         
         //*******
+        
+        //********
 
         loginPage = new LoginPage(driver);
         wait = new WaitHelper(driver);
