@@ -1,0 +1,25 @@
+2026-07-16 17:11:09,467 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-16 17:11:09,514 [main] INFO  com.erp.baseclass.BaseClass - =========== LOGIN TEST STARTED ===========
+2026-07-16 17:11:09,958 [main] INFO  com.erp.baseclass.BaseClass - Enter Username & Password : transcend
+2026-07-16 17:11:17,439 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
+2026-07-16 17:11:17,439 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-16 17:11:18,340 [main] INFO  com.erp.baseclass.BaseClass - Logout Successful
+2026-07-16 17:11:18,340 [main] INFO  com.erp.baseclass.BaseClass - =========== LOGIN TEST COMPLETED ===========
+2026-07-16 17:11:18,904 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-16 17:11:21,308 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-16 17:11:22,100 [main] INFO  com.erp.baseclass.BaseClass - Executing User : transcend
+2026-07-16 17:11:28,279 [main] INFO  com.erp.baseclass.BaseClass - Login Successful : transcend
+2026-07-16 17:11:28,716 [main] INFO  com.erp.baseclass.BaseClass - Executing User : dsmluc
+2026-07-16 17:11:29,548 [main] INFO  com.erp.baseclass.BaseClass - Login Successful : dsmluc
+2026-07-16 17:11:30,128 [main] INFO  com.erp.baseclass.BaseClass - Executing User : rmlko
+2026-07-16 17:11:50,972 [main] INFO  com.erp.baseclass.BaseClass - Executing User : rmlko
+2026-07-16 17:11:51,035 [main] INFO  com.erp.baseclass.BaseClass - Executing User : rmlko
+2026-07-16 17:11:51,984 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-16 17:11:53,576 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-16 17:11:53,762 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 1
+2026-07-16 17:12:18,319 [main] INFO  com.erp.baseclass.BaseClass - Valid Login Passed
+2026-07-16 17:12:18,734 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 2
+2026-07-16 17:12:39,354 [main] INFO  com.erp.baseclass.BaseClass - Invalid Login Passed
+2026-07-16 17:12:39,369 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 3
+2026-07-16 17:12:40,544 [main] INFO  com.erp.baseclass.BaseClass - Valid Login Passed
+2026-07-16 17:12:42,289 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
