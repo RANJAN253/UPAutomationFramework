@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 15 15:36:28 IST 2026</td>
+<td>Started on:</td><td>Thu Jul 16 16:03:43 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11201 ms)</td>
+<tr><td>Total time:</td><td>80 seconds (80845 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.erp.testcases.TC1_LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: com.erp.testcases.TC1_LoginTestCase</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;R_txtLogin&apos;]&quot;}
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=150.0.7871.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81e0e879684796104711da965707c5f5, findElement {value=R_txtLogin, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54307}, goog:processID: 5196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54307/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81e0e879684796104711da965707c5f5
+Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -93,26 +93,25 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:52)
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:21)
+	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
+	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
+	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713453581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1713453581'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;R_txtLogin&apos;]&quot;}
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace732176900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace732176900'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=150.0.7871.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81e0e879684796104711da965707c5f5, findElement {value=R_txtLogin, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54307}, goog:processID: 5196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54307/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81e0e879684796104711da965707c5f5
+Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -123,15 +122,16 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:52)
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:21)
+	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
+	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
+	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -160,7 +160,46 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.erp.testcases.TC1_LoginTestCase@662f5666</td></tr>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 1234567, invalid, 2</td>
+<td></td>
+<td>20</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<tr>
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: dsmluc, 123456, valid, 3</td>
+<td></td>
+<td>1</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<tr>
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 123456, valid, 1</td>
+<td></td>
+<td>6</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<tr>
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: dsmluc, 123456</td>
+<td></td>
+<td>1</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+<tr>
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: transcend, 123456</td>
+<td></td>
+<td>1</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+<tr>
+<td title='com.erp.testcases.TC1_LoginTestCase.verifyLogin()'><b>verifyLogin</b><br>Test class: com.erp.testcases.TC1_LoginTestCase<br>Test method: Verify Login with Valid Credentials</td>
+<td></td>
+<td>8</td>
+<td>com.erp.testcases.TC1_LoginTestCase@40499e4f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -171,16 +210,16 @@ Session ID: 81e0e879684796104711da965707c5f5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.erp.testcases.TC1_LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: com.erp.testcases.TC1_LoginTestCase</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;R_txtLogin&apos;]&quot;}
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=150.0.7871.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81e0e879684796104711da965707c5f5, findElement {value=R_txtLogin, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54307}, goog:processID: 5196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54307/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81e0e879684796104711da965707c5f5
+Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -188,26 +227,25 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:52)
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:21)
+	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
+	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
+	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284268103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace284268103'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;R_txtLogin&apos;]&quot;}
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace413177525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace413177525'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=150.0.7871.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81e0e879684796104711da965707c5f5, findElement {value=R_txtLogin, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54307}, goog:processID: 5196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54307/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 81e0e879684796104711da965707c5f5
+Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -218,15 +256,16 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:52)
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:21)
+	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
+	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
+	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -255,18 +294,31 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.erp.testcases.TC1_LoginTestCase@662f5666</td></tr>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
 <tr>
-<td title='com.erp.testcases.TC1_LoginTestCase.loginTest()'><b>loginTest</b><br>Test class: com.erp.testcases.TC1_LoginTestCase</td>
-<td><div><pre>java.lang.AssertionError: Login Failed - Dashboard title not found expected [true] but found [false]
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:32)
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Forest Corporation&quot;. Current title: &quot;UPFC ERP&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForTitle(WaitHelper.java:61)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace429639728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace429639728'><pre>java.lang.AssertionError: Login Failed - Dashboard title not found expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.erp.testcases.TC1_LoginTestCase.loginTest(TC1_LoginTestCase.java:32)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1707458318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1707458318'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Forest Corporation&quot;. Current title: &quot;UPFC ERP&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ac6ae3b6ee9fccc594a618844f52125
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForTitle(WaitHelper.java:61)
+	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -294,8 +346,8 @@ Session ID: 81e0e879684796104711da965707c5f5
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>7</td>
-<td>com.erp.testcases.TC1_LoginTestCase@662f5666</td></tr>
+<td>20</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
 </table><p>
 </body>
 </html>

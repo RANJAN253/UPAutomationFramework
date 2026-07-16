@@ -5,35 +5,41 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.RetryAnalyzer;
+import com.erp.utilities.WaitHelper;
 
 public class TC1_LoginTestCase extends BaseClass
 {
-	LoginPage login;
-	@Test(retryAnalyzer = RetryAnalyzer.class)
-    public void loginTest() throws IOException, InterruptedException 
-    {
-		login = new LoginPage(driver);
-		
-		login.enterUsername(username);
-		login.enterPassword(password);
-		login.clickLoginButton(); 
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.titleContains("Forest Corporation"));
-		
-		String actualTitle = driver.getTitle().trim();
-		System.out.println("Actual Title:-  [" + actualTitle + "]");
-		logger.info("Actual Title : " + actualTitle);
-			
-		Assert.assertTrue(actualTitle.contains("Forest Corporation1"),
-	            "Login Failed - Dashboard title not found");
+	LoginPage loginPage;
+    WaitHelper wait;
 
-	    logger.info("Login Test Passed");
-	}
-	
-	
+    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class, description = "Verify Login with Valid Credentials")
+    public void verifyLogin() {
+
+        logger.info("=========== LOGIN TEST STARTED ===========");
+
+        loginPage = new LoginPage(driver);
+        wait = new WaitHelper(driver);
+
+        // Login
+        loginPage.loginWith(username, password);
+        logger.info("Enter Username & Password : " + username, password);
+
+        // Wait for Dashboard Title
+        wait.waitForTitle("Forest Corporation");
+
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Forest Corporation";
+        logger.info("Actual Title : " + actualTitle);
+
+        Assert.assertEquals(actualTitle,expectedTitle,"Login Failed - Dashboard Title Mismatch");
+        logger.info("Login Successful");
+
+        // Logout
+        loginPage.clickLogoutButton();
+        logger.info("Logout Successful");
+        logger.info("=========== LOGIN TEST COMPLETED ===========");
+    }
 }

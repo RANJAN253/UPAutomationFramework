@@ -1,99 +1,74 @@
- package com.erp.pages;
-import java.time.Duration;
-import org.openqa.selenium.Keys;
+package com.erp.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.erp.utilities.WaitHelper;
 
 public class LoginPage {
 
     WebDriver driver;
+    WaitHelper wait;
 
-    // ─── Constructor ───────────────────────────────────────────
-    // PageFactory.initElements() maps @FindBy annotations to actual elements
-    
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        wait = new WaitHelper(driver);
     }
 
-    // ─── Web Elements (Page Locators) ──────────────────────────
-    // @FindBy    → How to find the element (id, name, xpath, css)
-    // @CacheLookup → Cache element after first find (faster, use for static elements)
+    // Username
+    @FindBy(id = "R_txtLogin")
+    WebElement txtUsername;
 
-    @FindBy(name = "R_txtLogin")
-    @CacheLookup
-    private WebElement usernameField;
-
+    // Password
     @FindBy(id = "R_txtPass")
-    @CacheLookup
-    private WebElement passwordField;
+    WebElement txtPassword;
 
+    // Login Button
     @FindBy(id = "btnLogin")
-    @CacheLookup
-    private WebElement loginButton;
-
-    @FindBy(xpath = "//a[normalize-space()='Logout']")
-    WebElement logoutButton;
+    WebElement loginButton;
     
     @FindBy(xpath = "//a[@id='ctl00_lblLoginName']")
     WebElement profileMenu;
+
+    // Logout Button (Change locator according to ERP)
+    @FindBy(xpath = "//a[normalize-space()='Logout']")
+    WebElement btnLogout;
     
     @FindBy(xpath="//a[normalize-space()='DashBoard']")
     WebElement dashboard;
-
-    // ─── Page Actions (Methods used in Test Classes) ───────────
-    public void enterUsername(String username) throws InterruptedException {
-        usernameField.clear();
-        usernameField.sendKeys(username);
-      }
-
-    public void enterPassword(String password) throws InterruptedException {
-        passwordField.clear();
-        passwordField.sendKeys(password);
-    }
     
-    public void clickLoginButton() throws InterruptedException {
-    	
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        
-    	wait.until(ExpectedConditions.elementToBeClickable(loginButton));
-        loginButton.click();
-        
-           wait.until(ExpectedConditions.visibilityOf(dashboard));
+    // Enter Username
+    public void enterUsername(String username) {
+        wait.sendKeys(txtUsername, username);
     }
 
-     public void clickLogoutButton() {
-    	
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        // Step 1: Hover on profile
-        Actions actions = new Actions(driver);
-        actions.moveToElement(profileMenu).perform();
-        wait.until(ExpectedConditions.visibilityOf(logoutButton));
-        logoutButton.click();
+    // Enter Password
+    public void enterPassword(String password) {
+        wait.sendKeys(txtPassword, password);
     }
 
-    public void loginWith(String username, String password) throws InterruptedException {
+    // Click Login
+    public void clickLoginButton() {
+        wait.click(loginButton);
+    }
+
+    // Complete Login
+    public void loginWith(String username, String password) {
+
         enterUsername(username);
         enterPassword(password);
         clickLoginButton();
-        Thread.sleep(2000);
     }
+
+    // Logout
+    public void clickLogoutButton() {
+    	 //Actions act = new Actions(driver);
+    	 //act.moveToElement(profileMenu).perform();
+    	 wait.mouseHover(profileMenu);
+    	 wait.waitForVisibility(btnLogout);
+    	 wait.click(btnLogout);
     
-    public boolean isDashboardVisible() {
-
-        try {
-
-            return dashboard.isDisplayed();
-
-        } catch(Exception e) {
-
-            return false;
-        }
     }
 }

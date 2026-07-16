@@ -10,7 +10,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.erp.baseclass.BaseClass;
 import com.erp.utilities.ScreenshotUtility;
 
-
 public class ExtentListener implements ITestListener {
 
     ExtentReports extent;
@@ -18,12 +17,9 @@ public class ExtentListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-
-        ExtentSparkReporter spark = new ExtentSparkReporter("test-output/Report.html");
-
+    	ExtentSparkReporter spark = new ExtentSparkReporter("test-output/Report.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
-
         extent.setSystemInfo("Tester", "Ranjan");
     }
 
@@ -40,19 +36,11 @@ public class ExtentListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
     	 try {
-
-    	        String path = ScreenshotUtility.captureScreenshot(
-    	                BaseClass.driver,
-    	                result.getName());
-
+    	        String path = ScreenshotUtility.captureScreenshot(BaseClass.driver,result.getName());
     	        test.fail(result.getThrowable());
-
     	        test.addScreenCaptureFromPath(path);
-
     	    } catch (Exception e) {
-
     	        e.printStackTrace();
-
     	    }
     }
 

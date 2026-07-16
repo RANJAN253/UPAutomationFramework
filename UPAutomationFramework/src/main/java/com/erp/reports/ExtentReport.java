@@ -21,59 +21,49 @@ public class ExtentReport extends TestListenerAdapter {
 	 public ExtentSparkReporter sparkReporter;
 	 public ExtentReports extent;
 	 public ExtentTest test;
+	 
+	 public void onStart(ITestContext context) {
+		 String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+	     String repName = "ExtentReport.html";
 
-	    public void onStart(ITestContext context) {
+	     // ✅ Correct initialization
+	     sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/" + repName);
 
-	        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	      //  String repName = "Test-Report-" + timeStamp + ".html";
-	          String repName = "ExtentReport.html";
+	     sparkReporter.config().setDocumentTitle("UP Forest Project");
+	     sparkReporter.config().setReportName("Automation Test Report");
+	     sparkReporter.config().setTheme(Theme.DARK);
 
-	        // ✅ Correct initialization
-	        sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/" + repName);
+	     extent = new ExtentReports();
+	     extent.attachReporter(sparkReporter);
 
-	        sparkReporter.config().setDocumentTitle("UP Forest Project");
-	        sparkReporter.config().setReportName("Automation Test Report");
-	        sparkReporter.config().setTheme(Theme.DARK);
-
-	        extent = new ExtentReports();
-	        extent.attachReporter(sparkReporter);
-
-	        extent.setSystemInfo("Host Name", "localhost");
-	        extent.setSystemInfo("Environment", "QA");
-	        extent.setSystemInfo("User", "Ranjan");
-	        extent.setSystemInfo("OS", "Windows 11");
-	    }
-
-	    public void onTestSuccess(ITestResult result) {
-	        test = extent.createTest(result.getName());
-	        test.log(Status.PASS,
-	                MarkupHelper.createLabel("Test Passed: " + result.getName(), ExtentColor.GREEN));
-	    }
-
-	    public void onTestFailure(ITestResult result) {
-	        test = extent.createTest(result.getName());
-
-	        test.log(Status.FAIL,
-	                MarkupHelper.createLabel("Test Failed: " + result.getName(), ExtentColor.RED));
-
-	        String screenshotPath = System.getProperty("user.dir") + "/Screenshots/" + result.getName() + ".png";
-
-	        File file = new File(screenshotPath);
-
-	        if (file.exists()) {
-	            test.fail("Screenshot:",
-	                MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-	        }
-	        
-	    }
-
-	    public void onTestSkipped(ITestResult result) {
-	        test = extent.createTest(result.getName());
-	        test.log(Status.SKIP,
-	                MarkupHelper.createLabel("Test Skipped: " + result.getName(), ExtentColor.ORANGE));
-	    }
-
-	    public void onFinish(ITestContext context) {
-	        extent.flush();
-	    }
-	}
+	     extent.setSystemInfo("Host Name", "localhost");
+	     extent.setSystemInfo("Environment", "QA");
+	     extent.setSystemInfo("User", "Ranjan");
+	     extent.setSystemInfo("OS", "Windows 11");
+	 }
+	 
+	 public void onTestSuccess(ITestResult result) {
+		 test = extent.createTest(result.getName());
+	     test.log(Status.PASS,MarkupHelper.createLabel("Test Passed: " + result.getName(), ExtentColor.GREEN));
+	 }
+	 
+	 public void onTestFailure(ITestResult result) {
+		 test = extent.createTest(result.getName());
+         test.log(Status.FAIL,MarkupHelper.createLabel("Test Failed: " + result.getName(), ExtentColor.RED));
+         String screenshotPath = System.getProperty("user.dir") + "/Screenshots/" + result.getName() + ".png";
+         File file = new File(screenshotPath);
+         
+         if (file.exists()) {
+        	 test.fail("Screenshot:",MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+         }
+	 }
+	 
+	 public void onTestSkipped(ITestResult result) {
+		 test = extent.createTest(result.getName());
+		 test.log(Status.SKIP,MarkupHelper.createLabel("Test Skipped: " + result.getName(), ExtentColor.ORANGE));
+	 }
+	 
+	 public void onFinish(ITestContext context) {
+		 extent.flush();
+	 }
+}

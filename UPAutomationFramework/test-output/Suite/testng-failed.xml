@@ -4,17 +4,17 @@
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="com.erp.listeners.ExtentListener"/>
-    <listener class-name="com.erp.utilities.reports"/>
+    <listener class-name="com.erp.reports.ExtentReport"/>
   </listeners>
   <test thread-count="5" name="Login(failed)">
     <classes>
-      <class name="com.erp.testcases.TC1_LoginTestCase">
+      <class name="com.erp.testcases.TC2_LoginWithDataDriven">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
+          <include name="verifyLoginDDT" invocation-numbers="2"/>
         </methods>
-      </class> <!-- com.erp.testcases.TC1_LoginTestCase -->
+      </class> <!-- com.erp.testcases.TC2_LoginWithDataDriven -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

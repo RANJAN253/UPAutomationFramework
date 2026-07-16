@@ -1,48 +1,90 @@
 package com.erp.utilities;
+
 import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 
 public class WaitHelper {
 	
-	WebDriver driver;
-	WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 	
-	public WaitHelper(WebDriver driver)
-	{
+	private static final int DEFAULT_TIMEOUT =20;
+	
+	
+	// default wait (20 second)
+	public WaitHelper(WebDriver driver) {
+		this(driver,DEFAULT_TIMEOUT);
+	}
+	
+	//Custom wait
+	public WaitHelper(WebDriver driver, int timeout){
 		this.driver = driver;
-		wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver,Duration.ofSeconds(timeout));
 	}
 	
-	public void waitForVisibility(WebElement element)
-	{
-		wait.until(ExpectedConditions.visibilityOf(element));
+	// wait for visibility
+	public WebElement waitForVisibility(WebElement element) {
+		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
+	// wait for clickable
+	public WebElement waitForClickable(WebElement element) {
+	    return wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
+	// click
 	public void click(WebElement element) {
-
-	    wait.until(ExpectedConditions.elementToBeClickable(element));
-
-	    element.click();
+		waitForClickable(element).click();
 	}
 	
+	//send keys
 	public void sendKeys(WebElement element, String value) {
-	    wait.until(ExpectedConditions.visibilityOf(element));
-	    element.clear();
-	    element.sendKeys(value);
+	    WebElement ele = waitForVisibility(element);
+	    ele.clear();
+	    ele.sendKeys(value);
 	}
-	
-	public void selectByText(WebElement element, String text) {
+	    		
+	// Select Dropdown
+    public void selectByText(WebElement element, String text) {
+        Select select = new Select(waitForClickable(element));
+        select.selectByVisibleText(text);
+    }
 
-	    WebElement dropdown = wait.until(
-	            ExpectedConditions.elementToBeClickable(element));
+    // Wait for Title
+    public void waitForTitle(String title) {
+        wait.until(ExpectedConditions.titleContains(title));
+    }
 
-	    Select select = new Select(dropdown);
+    // Wait for URL
+    public void waitForURL(String url) {
+        wait.until(ExpectedConditions.urlContains(url));
+    }
 
-	    select.selectByVisibleText(text);
-	}
+    // Wait for Alert
+    public void waitForAlert() {
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
+    // Wait for Invisibility
+    public void waitForInvisibility(WebElement element) {
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    // Wait for Frame
+    public void waitForFrame(String frameName) {
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameName));
+    }
+    
+    public  void mouseHover(WebElement element) {
+    	Actions actions = new Actions(driver);
+    	actions.moveToElement(element).perform();
+    	
+    }
+
 }

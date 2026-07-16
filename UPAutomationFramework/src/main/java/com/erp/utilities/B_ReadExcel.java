@@ -11,7 +11,7 @@ public class B_ReadExcel
 	public static Object[][] testData(String sheetName) throws IOException
 	
 	{
-		FileInputStream  fis = new FileInputStream("D:\\AutomationFramework\\UPERPAutomationWithPawan\\ReadFromExcel\\ForestDetails.xlsx");
+		FileInputStream  fis = new FileInputStream("D:\\AutomationFramework\\UPAutomationFramework\\src\\main\\resources\\ForestDetails.xlsx");
 		
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet(sheetName);

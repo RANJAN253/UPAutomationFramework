@@ -1,5 +1,4 @@
 package com.erp.pages;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,8 +38,5 @@ public class ServicePage {
 		//loginBtn.sendKeys(Keys.CONTROL,"a");
 		//loginBtn.sendKeys(Keys.BACK_SPACE);
 		invoke.sendKeys(Keys.ENTER);
-	}    
-	
-	
-
+	} 
 }

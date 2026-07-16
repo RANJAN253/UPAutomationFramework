@@ -4,7 +4,7 @@
 
 <listeners>
 	<listener class-name="com.erp.listeners.ExtentListener"/>
-	<listener class-name="com.erp.utilities.reports"/>
+	<listener class-name="com.erp.reports.ExtentReport"/>
 </listeners>
 
 <parameter name="browser" value="chrome"/>
@@ -12,6 +12,8 @@
   <test thread-count="5" name="Login">
     <classes>
       <class name="com.erp.testcases.TC1_LoginTestCase"/>
+      <class name="com.erp.testcases.TC2_LoginWithDataDriven"/>
+      <class name="com.erp.testcases.TC3_LoginWithReadWriteInExcel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

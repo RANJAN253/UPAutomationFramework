@@ -9,6 +9,8 @@ public class FrameworkConstants {
     public static final String SCREENSHOT_PATH = PROJECT_PATH + "/Screenshots/";
 
     public static final String LOG_PATH = PROJECT_PATH + "/Logs/";
+    
+    
 
 
 }
