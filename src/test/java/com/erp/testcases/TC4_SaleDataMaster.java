@@ -11,8 +11,10 @@ public class TC4_SaleDataMaster extends BaseClass {
 	LoginPage loginPage;
     SaleDateMasterPage salePage;
     WaitHelper wait;
+    
+    //**
 
-    @Test(retryAnalyzer = RetryAnalyzer.class)
+    @Test(retryAnalyzer = RetryAnalyzer.class)   
     public void verifySaleDateMasterCreation() throws InterruptedException {
     	
         logger.info("========== Sale Date Master Test Started ==========");
