@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-17T16:41:32 IST" name="Default suite" finished-at="2026-07-17T16:42:07 IST" duration-ms="34409">
+  <suite started-at="2026-07-17T17:04:30 IST" name="Default suite" finished-at="2026-07-17T17:04:54 IST" duration-ms="23982">
     <groups>
     </groups>
-    <test started-at="2026-07-17T16:41:32 IST" name="Default test" finished-at="2026-07-17T16:42:07 IST" duration-ms="34409">
+    <test started-at="2026-07-17T17:04:30 IST" name="Default test" finished-at="2026-07-17T17:04:54 IST" duration-ms="23982">
       <class name="com.erp.testcases.TC4_SaleDataMaster">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@6f8f9349]" started-at="2026-07-17T16:41:32 IST" name="setUp" finished-at="2026-07-17T16:41:48 IST" duration-ms="15643" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@75c9e76b]" started-at="2026-07-17T17:04:30 IST" name="setUp" finished-at="2026-07-17T17:04:45 IST" duration-ms="15170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySaleDateMasterCreation()[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@6f8f9349]" started-at="2026-07-17T16:41:48 IST" name="verifySaleDateMasterCreation" finished-at="2026-07-17T16:42:06 IST" duration-ms="18410" status="PASS">
+        <test-method signature="verifySaleDateMasterCreation()[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@75c9e76b]" started-at="2026-07-17T17:04:45 IST" name="verifySaleDateMasterCreation" finished-at="2026-07-17T17:04:54 IST" duration-ms="8402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySaleDateMasterCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@6f8f9349]" started-at="2026-07-17T16:42:06 IST" name="tearDown" finished-at="2026-07-17T16:42:07 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.erp.testcases.TC4_SaleDataMaster@75c9e76b]" started-at="2026-07-17T17:04:54 IST" name="tearDown" finished-at="2026-07-17T17:04:54 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -123,3 +123,27 @@
 2026-07-17 16:42:06,869 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
 2026-07-17 16:42:06,870 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
 2026-07-17 16:42:07,182 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 17:03:26,710 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 17:03:26,739 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 17:03:28,167 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 17:03:29,092 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 17:03:29,257 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 17:03:29,375 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 17:03:39,025 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 17:03:39,151 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 17:04:45,924 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 17:04:45,941 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 17:04:46,882 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 17:04:47,752 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 17:04:50,935 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 17:04:51,104 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 17:04:51,584 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
+2026-07-17 17:04:51,754 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
+2026-07-17 17:04:51,881 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
+2026-07-17 17:04:51,996 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
+2026-07-17 17:04:53,962 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
+2026-07-17 17:04:54,103 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
+2026-07-17 17:04:54,230 [main] INFO  com.erp.baseclass.BaseClass - Location Added
+2026-07-17 17:04:54,338 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
+2026-07-17 17:04:54,338 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
+2026-07-17 17:04:54,714 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed

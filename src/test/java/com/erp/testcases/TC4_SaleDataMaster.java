@@ -13,7 +13,7 @@ public class TC4_SaleDataMaster extends BaseClass {
     WaitHelper wait;
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
-    public void verifySaleDateMasterCreation() {
+    public void verifySaleDateMasterCreation() throws InterruptedException {
     	
         logger.info("========== Sale Date Master Test Started ==========");
 

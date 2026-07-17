@@ -88,8 +88,9 @@ public class SaleDateMasterPage extends BaseClass{
 	 }
 	 
 	 // Select Sale Type
-	 public void selectSaleType(String saleTypeName) {
+	 public void selectSaleType(String saleTypeName) throws InterruptedException {
 		 wait.selectByText(saleType, saleTypeName);
+		 Thread.sleep(3000);
 	 }
 	 
 	 // Select Sale Status
