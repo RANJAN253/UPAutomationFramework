@@ -19,7 +19,7 @@ public class TC1_LoginTestCase extends BaseClass
         loginPage = new LoginPage(driver);
         wait = new WaitHelper(driver);
 
-        // Login
+        // Login ********
         loginPage.loginWith(username, password);
         logger.info("Enter Username & Password : " + username, password);
 
