@@ -23,3 +23,103 @@
 2026-07-16 17:12:39,369 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 3
 2026-07-16 17:12:40,544 [main] INFO  com.erp.baseclass.BaseClass - Valid Login Passed
 2026-07-16 17:12:42,289 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 15:00:17,471 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://113.193.239.230/upfclkonewui/
+2026-07-17 15:00:17,486 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:00:30,291 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 15:00:50,461 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:01:11,022 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:01:31,663 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 15:04:45,156 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 15:04:45,184 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:04:53,003 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 15:05:13,579 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:05:32,225 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:05:32,366 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 15:08:40,958 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 15:08:40,990 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:08:46,090 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 15:08:47,403 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 15:08:47,580 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 15:08:47,707 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:09:07,906 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:09:13,508 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 15:12:50,056 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 15:12:50,081 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:12:57,920 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 15:13:00,378 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 15:13:00,553 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 15:13:00,709 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 15:13:21,095 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:13:41,314 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 15:14:04,503 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:00:03,446 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:00:03,468 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:00:04,438 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:00:05,321 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:00:05,498 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:00:05,674 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 16:00:25,931 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:00:35,491 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:00:35,620 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:02:53,046 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:02:53,059 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:03:00,577 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:03:01,472 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:03:01,673 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:03:01,805 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:03:21,953 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:03:40,586 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:04:03,098 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:04:03,132 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:04:06,379 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:04:07,326 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:04:07,524 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:04:07,659 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:04:27,798 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:04:48,293 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:16:05,270 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:16:05,302 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:16:06,203 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:16:07,130 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:16:07,309 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:16:07,483 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 16:16:07,511 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:16:33,125 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:16:33,428 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:19:31,201 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:19:31,231 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:19:32,034 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:19:33,011 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:19:33,191 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:19:33,328 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:19:56,277 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:19:56,513 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:32:58,516 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:32:58,527 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:33:11,446 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:33:12,329 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:33:12,512 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:33:12,684 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 16:33:12,872 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
+2026-07-17 16:33:12,971 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
+2026-07-17 16:33:15,010 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
+2026-07-17 16:33:15,104 [main] INFO  com.erp.baseclass.BaseClass - Location Added
+2026-07-17 16:33:15,104 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
+2026-07-17 16:33:15,104 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
+2026-07-17 16:33:15,420 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-17 16:41:48,438 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-17 16:41:48,470 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
+2026-07-17 16:42:01,511 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-17 16:42:03,358 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
+2026-07-17 16:42:03,525 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
+2026-07-17 16:42:03,686 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
+2026-07-17 16:42:04,170 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
+2026-07-17 16:42:04,319 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
+2026-07-17 16:42:04,452 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
+2026-07-17 16:42:04,562 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
+2026-07-17 16:42:06,500 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
+2026-07-17 16:42:06,642 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
+2026-07-17 16:42:06,750 [main] INFO  com.erp.baseclass.BaseClass - Location Added
+2026-07-17 16:42:06,869 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
+2026-07-17 16:42:06,870 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
+2026-07-17 16:42:07,182 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed

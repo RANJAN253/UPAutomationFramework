@@ -1,13 +1,9 @@
 package com.erp.testcases;
 import java.io.IOException;
 import org.testng.annotations.Test;
-
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.LoginPage;
-import com.erp.pages.PlotMasterPage;
 import com.erp.pages.TimberStackMasterPage;
-
-import junit.framework.Assert;
 
 public class TC5_TimberStackMasterTestCase extends BaseClass {
 	@Test

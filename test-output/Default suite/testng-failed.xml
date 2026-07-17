@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.erp.testcases.LoginWithDynamiceDataExcel">
+      <class name="com.erp.testcases.TC4_SaleDataMaster">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyLoginDDT" invocation-numbers="0 1 2"/>
+          <include name="verifySaleDateMasterCreation"/>
         </methods>
-      </class> <!-- com.erp.testcases.LoginWithDynamiceDataExcel -->
+      </class> <!-- com.erp.testcases.TC4_SaleDataMaster -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
