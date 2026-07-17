@@ -19,6 +19,8 @@ public class TC1_LoginTestCase extends BaseClass
     public void verifyLogin() {
 
         logger.info("=========== LOGIN TEST STARTED ===========");
+        
+        //*******
 
         loginPage = new LoginPage(driver);
         wait = new WaitHelper(driver);
