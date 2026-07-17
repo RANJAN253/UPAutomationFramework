@@ -1,8 +1,4 @@
 package com.erp.testcases;
-import java.io.IOException;
-import java.time.Duration;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
@@ -20,8 +16,6 @@ public class TC1_LoginTestCase extends BaseClass
 
         logger.info("=========== LOGIN TEST STARTED ===========");
         
-        //*******
-
         loginPage = new LoginPage(driver);
         wait = new WaitHelper(driver);
 

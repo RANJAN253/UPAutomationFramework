@@ -14,18 +14,9 @@ public class RetryAnalyzer  implements IRetryAnalyzer {
 
 	          retryCount++;
 
-	          System.out.println("Retrying Test : "
-	                 + result.getName()
-	                 + " Retry Count : "
-	                 + retryCount);
-
-	         return true;
-
+	          System.out.println("Retrying Test : " + result.getName()+ " Retry Count : " + retryCount);
+   	          return true;
 	     }
-
 	     return false;
-
 	 }
-	
-
 }

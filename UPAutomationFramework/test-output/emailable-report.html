@@ -8,80 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Login</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">80,845</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,409</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.erp.testcases.TC2_LoginWithDataDriven</td><td><a href="#m0">verifyLoginDDT</a></td><td rowspan="1">1784198073128</td><td rowspan="1">63</td></tr><tr><th colspan="4">Login &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">com.erp.testcases.TC2_LoginWithDataDriven</td><td><a href="#m1">verifyLoginDDT</a></td><td rowspan="2">1784198073065</td><td rowspan="2">63</td></tr><tr class="retriedeven"><td><a href="#m2">verifyLoginDDT</a></td></tr><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.erp.testcases.TC1_LoginTestCase</td><td><a href="#m3">verifyLogin</a></td><td rowspan="1">1784198026331</td><td rowspan="1">8239</td></tr><tr class="passedodd"><td rowspan="2">com.erp.testcases.TC2_LoginWithDataDriven</td><td><a href="#m4">verifyLoginDDT</a></td><td rowspan="2">1784198051042</td><td rowspan="2">1239</td></tr><tr class="passedodd"><td><a href="#m5">verifyLoginDDT</a></td></tr><tr class="passedeven"><td rowspan="3">com.erp.testcases.TC3_LoginWithReadWriteInExcel</td><td><a href="#m6">verifyLoginDDT</a></td><td rowspan="3">1784198082111</td><td rowspan="3">20683</td></tr><tr class="passedeven"><td><a href="#m7">verifyLoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m8">verifyLoginDDT</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.erp.testcases.TC4_SaleDataMaster</td><td><a href="#m0">verifySaleDateMasterCreation</a></td><td rowspan="1">1784286708460</td><td rowspan="1">18410</td></tr></tbody>
 </table>
-<h2>Login</h2><h3 id="m0">com.erp.testcases.TC2_LoginWithDataDriven#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>rmlko</td><td>123456</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
-Session ID: 2ac6ae3b6ee9fccc594a618844f52125
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.erp.testcases.TC2_LoginWithDataDriven#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>rmlko</td><td>123456</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ac6ae3b6ee9fccc594a618844f52125, clearElement {id=f.867D73F6CF338AA566E30954F19EA814.d.8122F993165E3EAD3D7439585CA0951E.e.166}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2ac6ae3b6ee9fccc594a618844f52125)] -&gt; id: R_txtLogin]
-Session ID: 2ac6ae3b6ee9fccc594a618844f52125
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.erp.testcases.TC2_LoginWithDataDriven#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>rmlko</td><td>123456</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Forest Corporation&quot;. Current title: &quot;UPFC ERP&quot; (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62281}, goog:processID: 16996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62281/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ac6ae3b6ee9fccc594a618844f52125
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.erp.utilities.WaitHelper.waitForTitle(WaitHelper.java:61)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.erp.testcases.TC1_LoginTestCase#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.erp.testcases.TC2_LoginWithDataDriven#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dsmluc</td><td>123456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.erp.testcases.TC2_LoginWithDataDriven#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>transcend</td><td>123456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.erp.testcases.TC3_LoginWithReadWriteInExcel#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>transcend</td><td>1234567</td><td>invalid</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.erp.testcases.TC3_LoginWithReadWriteInExcel#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>dsmluc</td><td>123456</td><td>valid</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.erp.testcases.TC3_LoginWithReadWriteInExcel#verifyLoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>transcend</td><td>123456</td><td>valid</td><td>1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.erp.testcases.TC4_SaleDataMaster#verifySaleDateMasterCreation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -14,7 +14,7 @@ public class WaitHelper {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	
-	private static final int DEFAULT_TIMEOUT =20;
+	private static final int DEFAULT_TIMEOUT =30;
 	
 	
 	// default wait (20 second)

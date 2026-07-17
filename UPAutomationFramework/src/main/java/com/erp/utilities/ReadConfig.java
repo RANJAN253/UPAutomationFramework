@@ -9,8 +9,7 @@ public class ReadConfig {
 	
 	public ReadConfig()	{
 		File src = new File("./src/main/resources/config.properties");
-		
-		
+				
 		try	{
 			FileInputStream fis = new FileInputStream(src);
 			prop = new Properties();
