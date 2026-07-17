@@ -37,5 +37,7 @@ public class TC1_LoginTestCase extends BaseClass
         loginPage.clickLogoutButton();
         logger.info("Logout Successful");
         logger.info("=========== LOGIN TEST COMPLETED ===========");
+        
+        //***
     }
 }
