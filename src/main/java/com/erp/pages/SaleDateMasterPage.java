@@ -1,16 +1,17 @@
 package com.erp.pages;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 import com.erp.baseclass.BaseClass;
 import com.erp.utilities.WaitHelper;
 
@@ -53,27 +54,21 @@ public class SaleDateMasterPage extends BaseClass{
 	 @FindBy(id = "ctl00_ContentPlaceHolder1_D_txtDate")
 	 WebElement saleDate;
 	 
+	 @FindBy(xpath="//table[@class='chkboxlist']//label")
+	 List<WebElement> allLocations;
+	 	 
 	 @FindBy(xpath = "//input[@value='>']")
 	 WebElement addButton;
 
-	 @FindBy(id = "ctl00_ContentPlaceHolder1_btnSave")
+	 @FindBy(xpath = "//input[@id='ctl00_ContentPlaceHolder1_btnSave']")
 	 WebElement saveButton;
-
-    // @FindBy(className = "chkboxlist")
-    // WebElement location;
 	 
-	 @FindBy(xpath="//table[@class='chkboxlist']//label")
-	 List<WebElement> allLocations;
-	 
-    // @FindBy(xpath="//div[@class='chkboxlist']//label")
-     
-
+	 @FindBy(id="ctl00_ContentPlaceHolder1_lblMsg")
+	 WebElement successMsg;
+	             
 	 @FindBy(linkText = "Home")
 	 WebElement home;
 
-	 @FindBy(how = How.XPATH, using = "//select[@id='ctl00_ContentPlaceHolder1_ddlloc']")
-	 @CacheLookup
-	 WebElement selectLocation;
 	 
 	 // Click Sales Module
 	 public void clickSalesModule() {
@@ -129,33 +124,36 @@ public class SaleDateMasterPage extends BaseClass{
      public void selectLocations(String... locationName) {
     	 
     	 wait.waitForVisibility(allLocations.get(0));
-    	 
     	 List<String> locationList = Arrays.asList(locationName);
-    	 
     	 System.out.println(locationList);
     	 
     	 for(WebElement element:allLocations) {
     		 String text = element.getText().trim();
     		 System.out.println("UI = " + text);
     		 
-    		 if(locationList.contains(text))
-    		 {
+    		 if(locationList.contains(text)) {
     			 wait.click(element);
     			 logger.info("Selected Location : " + text);
     		 }
     	 }
      }
-    	
-     // Click >
+      // Click >
      public void clickAddButton() {
+    	 wait.waitForVisibility(addButton);
     	 wait.click(addButton);
      }
 	 
-	 // Click Save Button
-	  public void clickSaveButton() {
-		  wait.click(saveButton);
-	  }
-	  
+     public void clickSaveButton() throws InterruptedException {
+    	    By saveBtn = By.id("ctl00_ContentPlaceHolder1_btnSave");
+    	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    	    WebElement button = wait.until(ExpectedConditions.elementToBeClickable(saveBtn));
+    	    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+    	    System.out.println("Save Button Clicked");
+    	}
+     
+     public void waitForSaveSuccess() {
+    	    wait.waitForVisibility(successMsg);
+    	}
 	  // Click Home
 	  public void clickHome() {
 		  wait.click(home);

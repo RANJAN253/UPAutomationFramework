@@ -12,9 +12,23 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyLoginDDT" invocation-numbers="2"/>
+          <include name="verifyLoginDDT" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.erp.testcases.TC2_LoginWithDataDriven -->
+      <class name="com.erp.testcases.TC4_SaleDataMaster">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySaleDateMasterCreation"/>
+        </methods>
+      </class> <!-- com.erp.testcases.TC4_SaleDataMaster -->
+      <class name="com.erp.testcases.TC3_LoginWithReadWriteInExcel">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginDDT" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.erp.testcases.TC3_LoginWithReadWriteInExcel -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

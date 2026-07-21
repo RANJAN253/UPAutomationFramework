@@ -12,8 +12,6 @@ public class TC4_SaleDataMaster extends BaseClass {
     SaleDateMasterPage salePage;
     WaitHelper wait;
     
-    //**
-
     @Test(retryAnalyzer = RetryAnalyzer.class)   
     public void verifySaleDateMasterCreation() throws InterruptedException {
     	
@@ -26,7 +24,6 @@ public class TC4_SaleDataMaster extends BaseClass {
         loginPage.loginWith(username, password);
         wait.waitForTitle("Forest Corporation");
         logger.info("Login Successful");
-
         
         // Open Sale Date Master
         salePage = new SaleDateMasterPage(driver);
@@ -41,9 +38,9 @@ public class TC4_SaleDataMaster extends BaseClass {
         salePage.selectSaleStatus("Due");
         logger.info("Sale Status Selected");
 
-        salePage.selectDate("Jul","2026","24");
+        salePage.selectDate("Jul","2026","27");
         logger.info("Date Selected");
-
+       
         salePage.selectLocations("Akbarpur","Aashifbagh","Anwla", "Sultanpur Depot");
         logger.info("Location Selected");
 
@@ -52,9 +49,11 @@ public class TC4_SaleDataMaster extends BaseClass {
 
         salePage.clickSaveButton();
         logger.info("Save Button Clicked");
+        
+        salePage.waitForSaveSuccess();
+        logger.info("Processing for Save button");
 
         // Validation
-
         Assert.assertTrue(true);
         logger.info("Sale Date Master Created Successfully");
 
