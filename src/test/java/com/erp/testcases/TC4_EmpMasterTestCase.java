@@ -1,13 +1,9 @@
 package com.erp.testcases;
 import java.io.IOException;
 import org.testng.annotations.Test;
-
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.EmpMasterPage;
 import com.erp.pages.LoginPage;
-import com.erp.pages.PlotMasterPage;
-
-import junit.framework.Assert;
 
 @Test
 public class TC4_EmpMasterTestCase extends BaseClass {
@@ -19,8 +15,7 @@ public class TC4_EmpMasterTestCase extends BaseClass {
 		lp.clickLoginButton();
 
 		EmpMasterPage emp = new EmpMasterPage(driver);
-		
-		
+				
 		emp.clickOnModule();
 		logger.info("Click on Module");
 		
@@ -32,8 +27,5 @@ public class TC4_EmpMasterTestCase extends BaseClass {
 		
 		emp.clickOnEmpMaster();
 		logger.info("Click to Plot Master");
-		
-	
 	}
-
 }

@@ -15,51 +15,50 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.erp.baseclass.BaseClass;
 import com.erp.utilities.WaitHelper;
 
-public class SaleDateMasterPage extends BaseClass{
+public class SalaryArrearPages extends BaseClass {
+	
 	 WebDriver driver;
 	 WaitHelper wait;
 	 
 	 // Constructor
-	 public SaleDateMasterPage(WebDriver driver) {
+	 public SalaryArrearPages(WebDriver driver) {
 		 this.driver = driver;
 		 PageFactory.initElements(driver, this);
 	     wait = new WaitHelper(driver);
 	 }
 	 
 	 // Locators
-	 @FindBy(xpath = "//h3[normalize-space()='Sales']")
-	 WebElement salesModule;
+	 @FindBy(xpath = "//h3[normalize-space()='Personnel']")
+	 WebElement PersonnelModule;
 
-	 @FindBy(linkText = "Depot Masters")
-	 WebElement depotMaster;
+	 @FindBy(linkText = "Payroll")
+	 WebElement payrolls;
+	 
+	 @FindBy(linkText = "Payroll Details")
+	 WebElement payrollDetails;
+	 
+	 @FindBy(linkText = "Arrear")
+	 WebElement arrear;
+	 
+	 @FindBy(xpath="//a[normalize-space()='Salary Arrear']")
+	 WebElement salaryarrear;
+	 
+	 @FindBy(id = "ctl00_ContentPlaceHolder1_D_ddlEPFNo")
+	 WebElement selectname;
 
-	 @FindBy(linkText = "Sale Date Master")
-	 WebElement saleDateMaster;
-
-	 @FindBy(id = "ctl00_ContentPlaceHolder1_D_ddlSaleType")
-	 WebElement saleType;
-
-	 @FindBy(id = "ctl00_ContentPlaceHolder1_D_ddlStatus")
-	 WebElement saleStatus;
+	 @FindBy(id = "ctl00_ContentPlaceHolder1_ddlMonth")
+	 WebElement selectmonth;
+	 
+	 @FindBy(id="ctl00_ContentPlaceHolder1_ddlYear")
+	 WebElement selectyear;
 	 
 	 @FindBy(xpath="//img[@class='PopcalTrigger']")
 	 WebElement calendarIcon;
 
-	 @FindBy(id="MonSelect")
-	 WebElement month;
-
-	 @FindBy(id="YearSelect")
-	 WebElement year;
-	 
-	 @FindBy(id = "ctl00_ContentPlaceHolder1_D_txtDate")
-	 WebElement saleDate;
-	 
-	 @FindBy(xpath="//table[@class='chkboxlist']//label")
+	@FindBy(xpath="//table[@class='chkboxlist']//label")
 	 List<WebElement> allLocations;
 	 	 
-	 @FindBy(xpath = "//input[@value='>']")
-	 WebElement addButton;
-
+	
 	 @FindBy(xpath = "//input[@id='ctl00_ContentPlaceHolder1_btnSave']")
 	 WebElement saveButton;
 	 
@@ -71,56 +70,69 @@ public class SaleDateMasterPage extends BaseClass{
 
 	 
 	 // Click Sales Module
-	 public void clickSalesModule() {
-		 wait.click(salesModule);
-	 }
-	 // Open Sale Date Master
-	 public void openSaleDateMaster() {
-		 Actions action = new Actions(driver);
-		 
-		 wait.waitForVisibility(depotMaster);
-		 action.moveToElement(depotMaster).perform();
-		 
-		 wait.click(saleDateMaster);
+	 public void clickPersonelModule() {
+		 wait.click(PersonnelModule);
 	 }
 	 
-	 // Select Sale Type
-	 public void selectSaleType(String saleTypeName) throws InterruptedException {
-		 wait.selectByText(saleType, saleTypeName);
+	 // Open Sale Date Master
+	 public void openSalaryArrear() throws InterruptedException {
+		 Actions action = new Actions(driver);
+		 
+		 wait.waitForVisibility(payrolls);
+		 action.moveToElement(payrolls).perform();
+		 
+		 wait.waitForVisibility(payrollDetails);
+		 action.moveToElement(payrollDetails).perform();
+		 
+		 wait.waitForVisibility(arrear);
+		 action.moveToElement(arrear).perform();
+		 		 
+		 wait.click(salaryarrear);
 		 Thread.sleep(3000);
 	 }
 	 
-	 // Select Sale Status
-	 public void selectSaleStatus(String status) {
-		 wait.selectByText(saleStatus, status);
+	 // Select Employee
+	 public void selectEmp(String salectEmp) throws InterruptedException {
+		 wait.waitForVisibility(selectname);
+		 wait.selectByText(selectname, salectEmp);
+	}
+	 
+	 // Select Month 
+	 public void selectMonth(String month) {
+		 wait.waitForVisibility(selectmonth);
+		 wait.selectByText(selectmonth, month);
 	 }
 	 
+	 // Select Year 
+	 public void selectYear(String year) {
+		 wait.waitForVisibility(selectyear);
+		 wait.selectByText(selectyear, year);
+	 }
+	 
+	 
+	 
 	// Enter Date
-	 public void selectDate(String months, String years, String day) {
-		 // Calendar Open
-		    wait.click(calendarIcon);
-		    
-		    // Switch to Calendar Frame (locator apne HTML ke hisab se change karo)
-		    driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@id,'gToday')]")));
-
-		    // Wait for Month Dropdown
-		    wait.waitForVisibility(month);
-
-		    // Select Month
-		    Select mon = new Select(month);
-		    mon.selectByVisibleText(months);
-
-		    // Select Year
-		    Select yr = new Select(year);
-		    yr.selectByVisibleText(years);
-
-		    // Select Day
-		    WebElement date = driver.findElement(By.xpath("//a[normalize-space()='" + day + "']"));
-		    wait.click(date);
-		    
-		 // Back to Main Page
-		    driver.switchTo().defaultContent();
-	 }	    
+	/*
+	 * public void selectDate(String months, String years, String day) { // Calendar
+	 * Open wait.click(calendarIcon);
+	 * 
+	 * // Switch to Calendar Frame (locator apne HTML ke hisab se change karo)
+	 * driver.switchTo().frame(driver.findElement(By.xpath(
+	 * "//iframe[contains(@id,'gToday')]")));
+	 * 
+	 * // Wait for Month Dropdown wait.waitForVisibility(month);
+	 * 
+	 * // Select Month Select mon = new Select(month);
+	 * mon.selectByVisibleText(months);
+	 * 
+	 * // Select Year Select yr = new Select(year); yr.selectByVisibleText(years);
+	 * 
+	 * // Select Day WebElement date =
+	 * driver.findElement(By.xpath("//a[normalize-space()='" + day + "']"));
+	 * wait.click(date);
+	 * 
+	 * // Back to Main Page driver.switchTo().defaultContent(); }
+	 */	    
 	    
 	 // Select Location
      public void selectLocations(String... locationName) {
@@ -139,12 +151,7 @@ public class SaleDateMasterPage extends BaseClass{
     		 }
     	 }
      }
-      // Click >
-     public void clickAddButton() {
-    	 wait.waitForVisibility(addButton);
-    	 wait.click(addButton);
-     }
-	 
+
      public void clickSaveButton() throws InterruptedException {
     	    By saveBtn = By.id("ctl00_ContentPlaceHolder1_btnSave");
     	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -160,4 +167,5 @@ public class SaleDateMasterPage extends BaseClass{
 	  public void clickHome() {
 		  wait.click(home);
 	  }
+
 }

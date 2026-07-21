@@ -198,3 +198,51 @@
 2026-07-21 12:02:20,898 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
 2026-07-21 12:02:50,990 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
 2026-07-21 12:03:21,702 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 13:30:42,791 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 13:30:42,807 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:30:44,428 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 13:31:07,418 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:31:07,638 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:31:07,795 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 13:35:59,575 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 13:35:59,614 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:36:14,134 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 13:36:45,223 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:37:15,734 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 13:41:06,086 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 13:41:06,110 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:41:07,646 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 13:41:09,024 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 13:41:09,335 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 13:42:07,493 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 13:42:07,514 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 13:42:08,820 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 13:42:13,091 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 13:42:13,546 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 15:02:33,967 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 15:02:34,006 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:02:47,673 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 15:02:52,234 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 15:02:52,405 [main] INFO  com.erp.baseclass.BaseClass - Employee Selected
+2026-07-21 15:02:52,560 [main] INFO  com.erp.baseclass.BaseClass - Month Selected
+2026-07-21 15:02:52,800 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:03:23,441 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 15:04:49,824 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 15:04:49,854 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:04:58,544 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 15:05:02,894 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 15:05:33,115 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:06:03,800 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 15:06:11,978 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 15:06:12,035 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:06:19,592 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 15:06:21,162 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 15:06:51,412 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:07:21,893 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-21 15:07:30,989 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
+2026-07-21 15:07:31,015 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:07:39,165 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
+2026-07-21 15:07:43,586 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
+2026-07-21 15:07:43,797 [main] INFO  com.erp.baseclass.BaseClass - Employee Selected
+2026-07-21 15:07:43,980 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
+2026-07-21 15:08:14,468 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
