@@ -1,248 +1,173 @@
-2026-07-20 12:35:28,904 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 12:35:28,919 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:35:36,411 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 12:35:38,520 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 12:35:41,697 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 12:35:41,887 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 12:35:42,383 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 12:35:42,533 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 12:35:42,676 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 12:35:42,776 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 12:35:44,773 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 12:35:44,924 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 12:35:45,043 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 12:35:45,167 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:36:10,617 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:36:10,750 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 12:37:50,315 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 12:37:50,331 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:38:03,738 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 12:38:04,690 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 12:38:07,853 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 12:38:08,084 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 12:38:08,545 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 12:38:08,687 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 12:38:08,819 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 12:38:08,922 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 12:38:10,832 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 12:38:10,979 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 12:38:11,085 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 12:38:11,199 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:38:41,678 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:39:12,431 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 12:43:43,526 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 12:43:43,546 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:43:44,532 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 12:43:45,465 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 12:43:48,657 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 12:43:48,782 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 12:43:49,265 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 12:43:49,415 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 12:43:49,527 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 12:43:49,668 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 12:43:51,795 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 12:43:51,959 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 12:43:52,091 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 12:43:52,225 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:44:22,334 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 12:44:52,685 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 13:27:14,559 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 13:27:14,588 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:27:15,481 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 13:27:16,573 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 13:27:19,775 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 13:27:19,937 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 13:27:20,437 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 13:27:20,599 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 13:27:20,859 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 13:27:21,023 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 13:27:23,192 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 13:27:23,344 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 13:27:23,454 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 13:27:23,497 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-20 13:27:23,499 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
-2026-07-20 13:27:23,807 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 13:28:41,019 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 13:28:41,055 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:28:51,110 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 13:28:52,029 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 13:28:55,210 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 13:28:55,366 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 13:28:55,863 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 13:28:56,072 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 13:28:56,213 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 13:28:56,333 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 13:28:58,363 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 13:28:58,507 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 13:28:58,616 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 13:29:03,665 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-20 13:29:03,666 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
-2026-07-20 13:29:03,995 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 13:29:45,872 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 13:29:45,911 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:29:53,895 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 13:29:54,811 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 13:29:58,009 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 13:29:58,161 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 13:29:58,626 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 13:29:58,777 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 13:29:58,917 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 13:29:59,030 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 13:30:01,004 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 13:30:01,147 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 13:30:01,275 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 13:30:11,336 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-20 13:30:11,337 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Created Successfully
-2026-07-20 13:30:11,682 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-20 13:39:51,580 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-20 13:39:51,610 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:39:58,706 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-20 13:39:59,663 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-20 13:40:02,900 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-20 13:40:03,027 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-20 13:40:03,518 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-20 13:40:03,677 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-20 13:40:03,813 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-20 13:40:03,924 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-20 13:40:05,879 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-20 13:40:06,025 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-20 13:40:06,141 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-20 13:40:06,181 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-20 13:40:26,115 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:40:27,189 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-20 13:40:57,687 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:48:08,150 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:48:09,012 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:48:28,696 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 11:48:33,171 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-21 11:48:36,589 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-21 11:48:36,758 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-21 11:48:37,367 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-21 11:48:37,686 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-21 11:48:37,822 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-21 11:48:37,920 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-21 11:48:39,948 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-21 11:48:40,127 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-21 11:48:40,245 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-21 11:48:40,284 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-21 11:49:10,940 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:49:41,162 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:50:12,232 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:51:36,894 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:51:36,926 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:51:51,139 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 11:51:52,767 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-21 11:51:55,949 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-21 11:51:56,144 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-21 11:51:56,611 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-21 11:52:27,088 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:52:55,895 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:52:56,733 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:54:36,705 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:54:36,739 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:55:05,012 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 11:55:06,210 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-21 11:55:09,393 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-21 11:55:09,541 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-21 11:55:10,008 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-21 11:55:10,150 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-21 11:55:10,297 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-21 11:55:10,409 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-21 11:55:12,466 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-21 11:55:12,617 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-21 11:55:12,739 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-21 11:55:12,778 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-21 11:55:42,876 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:56:13,347 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 11:56:43,798 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:57:05,882 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:57:05,972 [main] INFO  com.erp.baseclass.BaseClass - =========== LOGIN TEST STARTED ===========
-2026-07-21 11:57:19,579 [main] INFO  com.erp.baseclass.BaseClass - Enter Username & Password : transcend
-2026-07-21 11:57:32,015 [main] INFO  com.erp.baseclass.BaseClass - Actual Title : Forest Corporation
-2026-07-21 11:57:32,288 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 11:57:33,793 [main] INFO  com.erp.baseclass.BaseClass - Logout Successful
-2026-07-21 11:57:33,793 [main] INFO  com.erp.baseclass.BaseClass - =========== LOGIN TEST COMPLETED ===========
-2026-07-21 11:57:34,313 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:57:37,859 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:57:40,324 [main] INFO  com.erp.baseclass.BaseClass - Executing User : transcend
-2026-07-21 11:58:10,932 [main] INFO  com.erp.baseclass.BaseClass - Executing User : transcend
-2026-07-21 11:58:41,745 [main] INFO  com.erp.baseclass.BaseClass - Executing User : transcend
-2026-07-21 11:59:12,492 [main] INFO  com.erp.baseclass.BaseClass - Executing User : dsmluc
-2026-07-21 11:59:23,550 [main] INFO  com.erp.baseclass.BaseClass - Login Successful : dsmluc
-2026-07-21 11:59:24,008 [main] INFO  com.erp.baseclass.BaseClass - Executing User : rmlko
-2026-07-21 11:59:37,838 [main] INFO  com.erp.baseclass.BaseClass - Login Successful : rmlko
-2026-07-21 11:59:38,863 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 11:59:40,479 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 11:59:40,797 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 1
-2026-07-21 12:00:14,958 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 1
-2026-07-21 12:00:45,855 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 1
-2026-07-21 12:01:16,711 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 2
-2026-07-21 12:01:47,703 [main] INFO  com.erp.baseclass.BaseClass - Invalid Login Passed
-2026-07-21 12:01:47,715 [main] INFO  com.erp.baseclass.BaseClass - Executing Row : 3
-2026-07-21 12:01:53,488 [main] INFO  com.erp.baseclass.BaseClass - Valid Login Passed
-2026-07-21 12:01:54,356 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 12:01:56,595 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 12:01:56,629 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 12:02:12,734 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 12:02:14,012 [main] INFO  com.erp.baseclass.BaseClass - Sale Date Master Page Opened
-2026-07-21 12:02:17,183 [main] INFO  com.erp.baseclass.BaseClass - Sale Type Selected
-2026-07-21 12:02:17,358 [main] INFO  com.erp.baseclass.BaseClass - Sale Status Selected
-2026-07-21 12:02:17,792 [main] INFO  com.erp.baseclass.BaseClass - Date Selected
-2026-07-21 12:02:17,934 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Aashifbagh
-2026-07-21 12:02:18,042 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Akbarpur
-2026-07-21 12:02:18,139 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Anwla
-2026-07-21 12:02:20,043 [main] INFO  com.erp.baseclass.BaseClass - Selected Location : Sultanpur Depot
-2026-07-21 12:02:20,187 [main] INFO  com.erp.baseclass.BaseClass - Location Selected
-2026-07-21 12:02:20,298 [main] INFO  com.erp.baseclass.BaseClass - Location Added
-2026-07-21 12:02:20,334 [main] INFO  com.erp.baseclass.BaseClass - Save Button Clicked
-2026-07-21 12:02:20,898 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 12:02:50,990 [main] INFO  com.erp.baseclass.BaseClass - ========== Sale Date Master Test Started ==========
-2026-07-21 12:03:21,702 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 13:30:42,791 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 13:30:42,807 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:30:44,428 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 13:31:07,418 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:31:07,638 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:31:07,795 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 13:35:59,575 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 13:35:59,614 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:36:14,134 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 13:36:45,223 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:37:15,734 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 13:41:06,086 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 13:41:06,110 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:41:07,646 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 13:41:09,024 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 13:41:09,335 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 13:42:07,493 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 13:42:07,514 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 13:42:08,820 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 13:42:13,091 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 13:42:13,546 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 15:02:33,967 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 15:02:34,006 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:02:47,673 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 15:02:52,234 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 15:02:52,405 [main] INFO  com.erp.baseclass.BaseClass - Employee Selected
-2026-07-21 15:02:52,560 [main] INFO  com.erp.baseclass.BaseClass - Month Selected
-2026-07-21 15:02:52,800 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:03:23,441 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 15:04:49,824 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 15:04:49,854 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:04:58,544 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 15:05:02,894 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 15:05:33,115 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:06:03,800 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 15:06:11,978 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 15:06:12,035 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:06:19,592 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 15:06:21,162 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 15:06:51,412 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:07:21,893 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
-2026-07-21 15:07:30,989 [main] INFO  com.erp.baseclass.BaseClass - Application URL Opened:http://upstaging.upfcerp.com/
-2026-07-21 15:07:31,015 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:07:39,165 [main] INFO  com.erp.baseclass.BaseClass - Login Successful
-2026-07-21 15:07:43,586 [main] INFO  com.erp.baseclass.BaseClass - Salary Arrear Master Page Opened
-2026-07-21 15:07:43,797 [main] INFO  com.erp.baseclass.BaseClass - Employee Selected
-2026-07-21 15:07:43,980 [main] INFO  com.erp.baseclass.BaseClass - ========== Salary Arrear Test Started ==========
-2026-07-21 15:08:14,468 [main] INFO  com.erp.baseclass.BaseClass - Browser Closed
+2026-07-23 16:30:53,074 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:31:12,892 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:31:12,899 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:31:12,941 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing User : transcend
+2026-07-23 16:31:12,942 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:31:13,130 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:31:13,260 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:31:13,562 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:31:26,992 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful : transcend
+2026-07-23 16:31:27,396 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:31:27,400 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:31:29,001 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:31:29,215 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:31:29,217 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:31:29,218 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing User : dsmluc
+2026-07-23 16:31:29,218 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:31:37,065 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:31:37,172 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:31:37,318 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:31:44,549 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful : dsmluc
+2026-07-23 16:31:44,957 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:31:44,958 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:31:46,214 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:31:46,410 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:31:46,431 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:31:46,432 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing User : rmlko
+2026-07-23 16:31:46,432 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:31:47,081 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:31:47,273 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:31:47,581 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:32:07,561 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful : rmlko
+2026-07-23 16:32:07,957 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:32:07,958 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:32:09,330 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:32:16,910 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:32:16,912 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:32:16,917 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing Row : 1
+2026-07-23 16:32:16,917 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:32:17,040 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:32:17,158 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:32:17,281 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:32:47,710 [TestNG-test-Login-1] WARN  com.erp.utilities.Log - Test Skipped : verifyLoginDDT
+2026-07-23 16:32:49,067 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:32:57,176 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:32:57,177 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:32:57,181 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing Row : 1
+2026-07-23 16:32:57,181 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:32:57,309 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:32:57,422 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:32:57,626 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:33:27,882 [TestNG-test-Login-1] ERROR com.erp.utilities.Log - Test Failed : verifyLoginDDT
+2026-07-23 16:33:29,339 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:33:49,985 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:33:49,987 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:33:49,989 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing Row : 2
+2026-07-23 16:33:49,989 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:33:50,114 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:33:50,238 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:33:50,464 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:34:21,131 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Invalid Login Passed
+2026-07-23 16:34:21,132 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:34:22,413 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:34:22,673 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:34:22,693 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:34:22,696 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing Row : 3
+2026-07-23 16:34:22,696 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:34:25,664 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:34:25,790 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:34:25,913 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:34:45,797 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-07-23 16:34:46,136 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:34:46,136 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:34:47,343 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:35:00,684 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:35:00,687 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLoginDDT
+2026-07-23 16:35:00,688 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Executing Row : 4
+2026-07-23 16:35:00,688 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:35:00,829 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:35:00,954 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:35:01,254 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:35:07,839 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-07-23 16:35:08,187 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:35:08,188 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLoginDDT
+2026-07-23 16:35:09,351 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:35:10,070 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:35:10,073 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifySaleDateMasterCreation
+2026-07-23 16:35:10,074 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
+2026-07-23 16:35:10,075 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:35:10,258 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:35:10,407 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:35:10,524 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:35:11,072 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-23 16:35:11,888 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Date Master Page Opened
+2026-07-23 16:35:15,031 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Type Selected
+2026-07-23 16:35:15,225 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Status Selected
+2026-07-23 16:35:15,661 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Date Selected
+2026-07-23 16:35:17,957 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Location Selected
+2026-07-23 16:35:18,058 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Location Added
+2026-07-23 16:35:18,093 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Save Button Clicked
+2026-07-23 16:35:48,266 [TestNG-test-Login-1] WARN  com.erp.utilities.Log - Test Skipped : verifySaleDateMasterCreation
+2026-07-23 16:35:49,580 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:36:03,076 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:36:03,079 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifySaleDateMasterCreation
+2026-07-23 16:36:03,079 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
+2026-07-23 16:36:03,080 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:36:03,187 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:36:03,307 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:36:03,424 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:36:15,101 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-23 16:36:15,900 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Date Master Page Opened
+2026-07-23 16:36:19,033 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Type Selected
+2026-07-23 16:36:19,154 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Sale Status Selected
+2026-07-23 16:36:19,557 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Date Selected
+2026-07-23 16:36:21,757 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Location Selected
+2026-07-23 16:36:21,856 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Location Added
+2026-07-23 16:36:21,890 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Save Button Clicked
+2026-07-23 16:36:52,254 [TestNG-test-Login-1] ERROR com.erp.utilities.Log - Test Failed : verifySaleDateMasterCreation
+2026-07-23 16:36:53,643 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Launching Browser : chrome
+2026-07-23 16:37:12,656 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 16:37:12,657 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Started : verifyLogin
+2026-07-23 16:37:12,657 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-07-23 16:37:12,658 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 16:37:12,767 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 16:37:12,873 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:37:12,993 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 16:37:12,993 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-07-23 16:37:26,995 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-07-23 16:37:26,995 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-23 16:37:27,386 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 16:37:27,386 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Logout Successful
+2026-07-23 16:37:27,386 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-07-23 16:37:27,386 [TestNG-test-Login-1] INFO  com.erp.utilities.Log - Test Passed : verifyLogin
+2026-07-23 16:37:27,672 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-23 16:37:27,675 [main] INFO  com.erp.utilities.Log - TEST ENDED : Login
+2026-07-23 16:37:27,675 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-23 17:49:03,911 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-07-23 17:49:15,769 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 17:49:15,792 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : verifyLogin
+2026-07-23 17:49:15,805 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-07-23 17:49:15,831 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 17:49:15,948 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 17:49:16,103 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 17:49:23,381 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 17:49:23,381 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-07-23 17:49:23,409 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-07-23 17:49:23,409 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-23 17:49:23,855 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 17:49:23,856 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
+2026-07-23 17:49:23,856 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-07-23 17:49:23,858 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : verifyLogin
+2026-07-23 17:49:23,868 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
+2026-07-23 17:49:24,138 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-23 17:49:24,138 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
+2026-07-23 17:49:24,138 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-23 17:49:51,299 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Launching firefox browser
+2026-07-23 17:49:53,057 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-23 17:49:53,067 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Test Started : verifyLogin
+2026-07-23 17:49:53,067 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-07-23 17:49:53,067 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-23 17:49:53,219 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-23 17:49:53,282 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 17:50:00,808 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-23 17:50:00,808 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-07-23 17:50:00,822 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-07-23 17:50:00,822 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-23 17:50:01,359 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-23 17:50:01,359 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Logout Successful
+2026-07-23 17:50:01,359 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-07-23 17:50:01,359 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Test Passed : verifyLogin
+2026-07-23 17:50:01,361 [TestNG-test-Firefox-1] INFO  com.erp.utilities.Log - Closing Browser
+2026-07-23 17:50:03,434 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-23 17:50:03,434 [main] INFO  com.erp.utilities.Log - TEST ENDED : Firefox
+2026-07-23 17:50:03,434 [main] INFO  com.erp.utilities.Log - =============================

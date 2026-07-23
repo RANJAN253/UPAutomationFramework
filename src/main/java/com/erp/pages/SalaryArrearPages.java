@@ -147,7 +147,7 @@ public class SalaryArrearPages extends BaseClass {
     		 
     		 if(locationList.contains(text)) {
     			 wait.click(element);
-    			 logger.info("Selected Location : " + text);
+    			 
     		 }
     	 }
      }

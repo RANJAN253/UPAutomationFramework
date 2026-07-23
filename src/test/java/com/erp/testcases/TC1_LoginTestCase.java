@@ -3,6 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.LoginPage;
+import com.erp.utilities.Log;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
 
@@ -13,30 +14,32 @@ public class TC1_LoginTestCase extends BaseClass
 
     @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class, description = "Verify Login with Valid Credentials")
     public void verifyLogin() {
-
-        logger.info("=========== LOGIN TEST STARTED ===========");
-        
-        loginPage = new LoginPage(driver);
-        wait = new WaitHelper(driver);
+    	
+    	Log.info("=========== LOGIN TEST STARTED ===========");
+    	
+    	loginPage = new LoginPage(getDriver());
+        wait = new WaitHelper(getDriver());
 
         // Login ********
         loginPage.loginWith(username, password);
-        logger.info("Enter Username & Password : " + username, password);
-
+        Log.info("Entered Username : " + username);
+       
         // Wait for Dashboard Title
         wait.waitForTitle("Forest Corporation");
 
-        String actualTitle = driver.getTitle();
+        String actualTitle = getDriver().getTitle();
         String expectedTitle = "Forest Corporation";
-        logger.info("Actual Title : " + actualTitle);
-
+        
+        Log.info("Actual Title : " + actualTitle);
+        
         Assert.assertEquals(actualTitle,expectedTitle,"Login Failed - Dashboard Title Mismatch");
-        logger.info("Login Successful");
+        Log.info("Login Successful");
 
         // Logout
         loginPage.clickLogoutButton();
-        logger.info("Logout Successful");
-        logger.info("=========== LOGIN TEST COMPLETED ===========");
+        
+        Log.info("Logout Successful");
+        Log.info("=========== LOGIN TEST COMPLETED ===========");
         
         //***
     }
