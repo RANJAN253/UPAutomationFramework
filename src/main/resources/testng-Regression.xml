@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="methods" thread-count="1">
+
+	<listeners>
+		<listener class-name="com.erp.listeners.ExtentListener"/>
+	</listeners>
+
+	<test name="Regression Test">
+
+		<parameter name="browser" value="chrome"/>
+
+  		 <classes>
+     		<class name="com.erp.testcases.TC1_LoginTestCase"/>
+     		<class name="com.erp.testcases.TC2_LoginWithDataDriven"/>
+     		<class name="com.erp.testcases.TC3_LoginWithReadWriteInExcel"/>
+     		<class name="com.erp.testcases.TC4_SaleDataMaster"/>
+    	</classes>
+     
+  	</test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+
+
