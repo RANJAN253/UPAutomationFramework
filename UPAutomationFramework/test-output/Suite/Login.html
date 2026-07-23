@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 16 17:10:39 IST 2026</td>
+<td>Started on:</td><td>Thu Jul 23 16:30:50 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>122 seconds (122555 ms)</td>
+<tr><td>Total time:</td><td>397 seconds (397428 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,62 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfb7b48bb263471bf84bc6947486bbc1, clearElement {id=f.86C8BDFDB1A6236DF66FDFA594C32457.d.4CF00593805C87A931AF95D1EA67F817.e.181}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bfb7b48bb263471bf84bc6947486bbc1)] -&gt; id: R_txtLogin]
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947060963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1947060963'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfb7b48bb263471bf84bc6947486bbc1, clearElement {id=f.86C8BDFDB1A6236DF66FDFA594C32457.d.4CF00593805C87A931AF95D1EA67F817.e.181}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bfb7b48bb263471bf84bc6947486bbc1)] -&gt; id: R_txtLogin]
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 123456, valid, 1</td>
+<td><div><pre>java.lang.AssertionError: Valid Login Failed
+	at com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT(TC3_LoginWithReadWriteInExcel.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace632747729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace632747729'><pre>java.lang.AssertionError: Valid Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT(TC3_LoginWithReadWriteInExcel.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -142,25 +98,64 @@ Session ID: bfb7b48bb263471bf84bc6947486bbc1
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>0</td>
-<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+<td>30</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@13bc8645</td></tr>
+<tr>
+<td title='com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation()'><b>verifySaleDateMasterCreation</b><br>Test class: com.erp.testcases.TC4_SaleDataMaster</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (e3905ff671942f18ee1918bc5961bd55)] -&gt; id: ctl00_ContentPlaceHolder1_lblMsg] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63662}, goog:processID: 15276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63662/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3905ff671942f18ee1918bc5961bd55
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForVisibility(WaitHelper.java:31)
+	at com.erp.pages.SaleDateMasterPage.waitForSaveSuccess(SaleDateMasterPage.java:157)
+	at com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation(TC4_SaleDataMaster.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690311758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690311758'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (e3905ff671942f18ee1918bc5961bd55)] -&gt; id: ctl00_ContentPlaceHolder1_lblMsg] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63662}, goog:processID: 15276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63662/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3905ff671942f18ee1918bc5961bd55
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForVisibility(WaitHelper.java:31)
+	at com.erp.pages.SaleDateMasterPage.waitForSaveSuccess(SaleDateMasterPage.java:157)
+	at com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation(TC4_SaleDataMaster.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>49</td>
+<td>com.erp.testcases.TC4_SaleDataMaster@24c22fe</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,35 +166,40 @@ Session ID: bfb7b48bb263471bf84bc6947486bbc1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 123456, valid, 1</td>
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: transcend, Tipl@2019</td>
 <td></td>
-<td>25</td>
-<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<td>14</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@14f232c4</td></tr>
 <tr>
 <td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: dsmluc, 123456, valid, 3</td>
 <td></td>
-<td>1</td>
-<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<td>23</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@13bc8645</td></tr>
 <tr>
 <td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: dsmluc, 123456</td>
 <td></td>
-<td>1</td>
-<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
-<tr>
-<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: transcend, 123456</td>
-<td></td>
-<td>6</td>
-<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
-<tr>
-<td title='com.erp.testcases.TC1_LoginTestCase.verifyLogin()'><b>verifyLogin</b><br>Test class: com.erp.testcases.TC1_LoginTestCase<br>Test method: Verify Login with Valid Credentials</td>
-<td></td>
-<td>8</td>
-<td>com.erp.testcases.TC1_LoginTestCase@40499e4f</td></tr>
+<td>15</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@14f232c4</td></tr>
 <tr>
 <td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 1234567, invalid, 2</td>
 <td></td>
-<td>20</td>
-<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@4fc5e095</td></tr>
+<td>31</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@13bc8645</td></tr>
+<tr>
+<td title='com.erp.testcases.TC1_LoginTestCase.verifyLogin()'><b>verifyLogin</b><br>Test class: com.erp.testcases.TC1_LoginTestCase<br>Test method: Verify Login with Valid Credentials</td>
+<td></td>
+<td>14</td>
+<td>com.erp.testcases.TC1_LoginTestCase@747f281</td></tr>
+<tr>
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, Tipl@2019, valid, 4</td>
+<td></td>
+<td>7</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@13bc8645</td></tr>
+<tr>
+<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
+<td></td>
+<td>21</td>
+<td>com.erp.testcases.TC2_LoginWithDataDriven@14f232c4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -210,29 +210,18 @@ Session ID: bfb7b48bb263471bf84bc6947486bbc1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Forest Corporation&quot;. Current title: &quot;UPFC ERP&quot; (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.erp.utilities.WaitHelper.waitForTitle(WaitHelper.java:61)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace616990183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace616990183'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Forest Corporation&quot;. Current title: &quot;UPFC ERP&quot; (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.erp.utilities.WaitHelper.waitForTitle(WaitHelper.java:61)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:26)
+<td title='com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC3_LoginWithReadWriteInExcel<br>Parameters: transcend, 123456, valid, 1</td>
+<td><div><pre>java.lang.AssertionError: Valid Login Failed
+	at com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT(TC3_LoginWithReadWriteInExcel.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace919529509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace919529509'><pre>java.lang.AssertionError: Valid Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.erp.testcases.TC3_LoginWithReadWriteInExcel.verifyLoginDDT(TC3_LoginWithReadWriteInExcel.java:47)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -243,111 +232,64 @@ Session ID: bfb7b48bb263471bf84bc6947486bbc1
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>20</td>
-<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+<td>30</td>
+<td>com.erp.testcases.TC3_LoginWithReadWriteInExcel@13bc8645</td></tr>
 <tr>
-<td title='com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT()'><b>verifyLoginDDT</b><br>Test class: com.erp.testcases.TC2_LoginWithDataDriven<br>Parameters: rmlko, 123456</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
+<td title='com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation()'><b>verifySaleDateMasterCreation</b><br>Test class: com.erp.testcases.TC4_SaleDataMaster</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (0e5d5a492798e9f926c0a55921e9409c)] -&gt; id: ctl00_ContentPlaceHolder1_lblMsg] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfb7b48bb263471bf84bc6947486bbc1, clearElement {id=f.86C8BDFDB1A6236DF66FDFA594C32457.d.4CF00593805C87A931AF95D1EA67F817.e.181}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bfb7b48bb263471bf84bc6947486bbc1)] -&gt; id: R_txtLogin]
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace713765818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace713765818'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=150.0.7871.115)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63606}, goog:processID: 6456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63606/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e5d5a492798e9f926c0a55921e9409c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForVisibility(WaitHelper.java:31)
+	at com.erp.pages.SaleDateMasterPage.waitForSaveSuccess(SaleDateMasterPage.java:157)
+	at com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation(TC4_SaleDataMaster.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778279516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778279516'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (0e5d5a492798e9f926c0a55921e9409c)] -&gt; id: ctl00_ContentPlaceHolder1_lblMsg] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bfb7b48bb263471bf84bc6947486bbc1, clearElement {id=f.86C8BDFDB1A6236DF66FDFA594C32457.d.4CF00593805C87A931AF95D1EA67F817.e.181}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63578}, goog:processID: 5960, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63578/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bfb7b48bb263471bf84bc6947486bbc1)] -&gt; id: R_txtLogin]
-Session ID: bfb7b48bb263471bf84bc6947486bbc1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
-	at com.erp.utilities.WaitHelper.sendKeys(WaitHelper.java:49)
-	at com.erp.pages.LoginPage.enterUsername(LoginPage.java:44)
-	at com.erp.pages.LoginPage.loginWith(LoginPage.java:60)
-	at com.erp.testcases.TC2_LoginWithDataDriven.verifyLoginDDT(TC2_LoginWithDataDriven.java:25)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.129, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63606}, goog:processID: 6456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63606/devtoo..., se:cdpVersion: 150.0.7871.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e5d5a492798e9f926c0a55921e9409c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.erp.utilities.WaitHelper.waitForVisibility(WaitHelper.java:31)
+	at com.erp.pages.SaleDateMasterPage.waitForSaveSuccess(SaleDateMasterPage.java:157)
+	at com.erp.testcases.TC4_SaleDataMaster.verifySaleDateMasterCreation(TC4_SaleDataMaster.java:54)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>0</td>
-<td>com.erp.testcases.TC2_LoginWithDataDriven@75ed9710</td></tr>
+<td>38</td>
+<td>com.erp.testcases.TC4_SaleDataMaster@24c22fe</td></tr>
 </table><p>
 </body>
 </html>

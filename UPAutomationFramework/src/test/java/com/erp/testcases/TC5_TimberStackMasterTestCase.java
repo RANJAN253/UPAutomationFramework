@@ -4,19 +4,20 @@ import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.LoginPage;
 import com.erp.pages.TimberStackMasterPage;
+import com.erp.utilities.Log;
 
 public class TC5_TimberStackMasterTestCase extends BaseClass {
 	@Test
 	public void stackMaster() throws InterruptedException, IOException {
-		LoginPage lp = new LoginPage(driver);
+		LoginPage lp = new LoginPage(getDriver());
 		lp.enterUsername(username);
 		lp.enterPassword(password);
 		lp.clickLoginButton();
 
-		TimberStackMasterPage stack = new TimberStackMasterPage(driver);
+		TimberStackMasterPage stack = new TimberStackMasterPage(getDriver());
 		stack.selectLocation("Kursi Road Depot Lucknow [Depot]");
 	
-		logger.info("Selected Location");
+		Log.info("Selected Location");
 		stack.clickonModule();
 		stack.clickOnAction();
 		stack.clickOnTimberStackMaster();

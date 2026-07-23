@@ -1,15 +1,17 @@
 package com.erp.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.erp.utilities.Log;
 import com.erp.utilities.WaitHelper;
 
 public class LoginPage {
 
     WebDriver driver;
     WaitHelper wait;
+    Log log;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -56,10 +58,17 @@ public class LoginPage {
 
     // Complete Login
     public void loginWith(String username, String password) {
-
+    	
+    	Log.info("Entering Username");
         enterUsername(username);
+        
+        Log.info("Entering Password");
         enterPassword(password);
+        
+        Log.info("Clicking Login Button");
         clickLoginButton();
+        
+        Log.info("Logout Successfully");
     }
 
     // Logout
@@ -69,6 +78,8 @@ public class LoginPage {
     	 wait.mouseHover(profileMenu);
     	 wait.waitForVisibility(btnLogout);
     	 wait.click(btnLogout);
+    	 
+    	 Log.info("Clicking Login Button");
     
     }
 }
