@@ -14,14 +14,16 @@ import com.erp.utilities.Log;
 
 public class ExtentListener implements ITestListener {
 	
-	private ExtentReports extent = ExtentManagerReport.getInstance();   //Get ExtentReport object from ExtentManagarReport
+	private ExtentReports extent ;
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // Thread-safe ExtentTest object //OR
     //private ExtentTest test;
 
     @Override
     public void onStart(ITestContext context) {
     	//Report is already initialized in ExtentManagerReport
-    	
+    	extent = ExtentManagerReport.getInstance();
+
+        Log.info("Extent Report Initialized");
     }
 
     @Override
@@ -63,7 +65,9 @@ public class ExtentListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
     	Log.endTestCase(context.getName());
+    	System.out.println("Flushing Extent Report...");
         extent.flush();
+        System.out.println("Extent Report Generated Successfully");
         test.remove();
     }
 }
