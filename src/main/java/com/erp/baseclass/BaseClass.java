@@ -24,11 +24,11 @@ public class BaseClass {
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
 	
-	public static WebDriver getDriver() {  // for Thread
+	public static WebDriver getDriver() {  
 	    return driver.get();
 	}
 
-	public static void setDriver(WebDriver webDriver) {  // for Thread
+	public static void setDriver(WebDriver webDriver) {  
 	    driver.set(webDriver);
 	}
 	
@@ -74,9 +74,9 @@ public class BaseClass {
 		
 		Log.info("Launching " + br + " browser");
 			 
-		getDriver().manage().window().maximize();  // Thread
-		getDriver().manage().deleteAllCookies();// Thread
-		getDriver().get(baseURL);	  // Thread	
+		getDriver().manage().window().maximize();  
+		getDriver().manage().deleteAllCookies();
+		getDriver().get(baseURL);	  
 		Log.info("Application URL : " + baseURL);
 				 
 		} catch (Exception e ){
@@ -91,11 +91,7 @@ public class BaseClass {
 		if(getDriver()!=null) {  // Thread
 			getDriver().quit();
 			driver.remove();
-			
-						
-		//if(driver !=null) {
-		//driver.quit();
-		//logger.info("Browser Closed");
+
 		}
 	} 
 }
