@@ -35,7 +35,7 @@
   			<configuration>
   				<suiteXmlFiles>
   					<!-- TestNG suite XML files-->
-  					<suiteXmlFile>testng.xml</suiteXmlFile>
+  					<suiteXmlFile>src/main/resources/testng-smoke.xml</suiteXmlFile>
   				</suiteXmlFiles>
   			</configuration>
   		</plugin>
