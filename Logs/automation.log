@@ -205,3 +205,23 @@
 2026-07-24 15:21:13,903 [main] INFO  com.erp.utilities.Log - =============================
 2026-07-24 15:21:13,903 [main] INFO  com.erp.utilities.Log - TEST ENDED : Smoke Test
 2026-07-24 15:21:13,903 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-24 15:24:56,356 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
+2026-07-24 15:24:58,902 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-07-24 15:25:19,510 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-07-24 15:25:19,542 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Test Started : verifyLogin
+2026-07-24 15:25:19,548 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-07-24 15:25:19,578 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Entering Username
+2026-07-24 15:25:19,709 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Entering Password
+2026-07-24 15:25:19,835 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-24 15:25:19,994 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Logout Successfully
+2026-07-24 15:25:20,003 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-07-24 15:25:33,725 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-07-24 15:25:33,742 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Login Successful
+2026-07-24 15:25:34,139 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Clicking Login Button
+2026-07-24 15:25:34,139 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Logout Successful
+2026-07-24 15:25:34,140 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-07-24 15:25:34,141 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Test Passed : verifyLogin
+2026-07-24 15:25:34,148 [TestNG-test-Smoke Test-1] INFO  com.erp.utilities.Log - Closing Browser
+2026-07-24 15:25:34,367 [main] INFO  com.erp.utilities.Log - =============================
+2026-07-24 15:25:34,367 [main] INFO  com.erp.utilities.Log - TEST ENDED : Smoke Test
+2026-07-24 15:25:34,367 [main] INFO  com.erp.utilities.Log - =============================
