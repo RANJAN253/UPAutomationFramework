@@ -1,37 +1,43 @@
 package com.erp.baseclass;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import com.erp.utilities.Log;
 import com.erp.utilities.ReadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	public static WebDriver driver;
+	
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	//public static WebDriver driver;
+	
 	ReadConfig readconfig=new ReadConfig();
-		
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
 	
-	public static Logger logger = LogManager.getLogger(BaseClass.class);
+	public static WebDriver getDriver() {  // for Thread
+	    return driver.get();
+	}
+
+	public static void setDriver(WebDriver webDriver) {  // for Thread
+	    driver.set(webDriver);
+	}
 	
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String br) {
 	//public void setUp(String br)  {
 		try {
 		if(br.equalsIgnoreCase("chrome")) {
-			
 			//WebDriverManager.chromedriver().setup();
 			 ChromeOptions options = new ChromeOptions();
 
@@ -51,43 +57,45 @@ public class BaseClass {
 
 		    options.setExperimentalOption("prefs", prefs);
 		    
-		    driver = new ChromeDriver(options);
-			
+		    setDriver(new ChromeDriver(options));  //Thread
+		    
 		} else if(br.equalsIgnoreCase("firefox")) {
 		  WebDriverManager.firefoxdriver().setup();
-		  driver= new FirefoxDriver();
+		   setDriver(new FirefoxDriver());  // For Thread
 		  
 		}  else if (br.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			setDriver(new EdgeDriver());   // Thread 
 			
 		} else {
 			
-			System.out.println("Browser not supported");
+			throw new IllegalArgumentException("Browser not supported : " + br);
 		}
-			 
-		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		
-		driver.get(baseURL);
-		 
-		logger.info("Application URL Opened:" + baseURL);
-		 
+		Log.info("Launching " + br + " browser");
+			 
+		getDriver().manage().window().maximize();  // Thread
+		getDriver().manage().deleteAllCookies();// Thread
+		getDriver().get(baseURL);	  // Thread	
+		Log.info("Application URL : " + baseURL);
+				 
 		} catch (Exception e ){
 			
-			logger.error("Error during browser setup:" + e.getMessage());
+			Log.error("Failed to launch browser : " + br, e);
 		}
 	}
 	
-	@AfterClass()
+	@AfterMethod(alwaysRun = true)
 	public void tearDown()	{
-		
-		if(driver !=null) {
-				
-		driver.quit();
-		logger.info("Browser Closed");
+		Log.info("Closing Browser");
+		if(getDriver()!=null) {  // Thread
+			getDriver().quit();
+			driver.remove();
+			
+						
+		//if(driver !=null) {
+		//driver.quit();
+		//logger.info("Browser Closed");
 		}
 	} 
 }

@@ -1,53 +1,54 @@
 package com.erp.utilities;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Log {
-	    // Initialize Log4j logs
-		//private static Logger logger = Logger.getLogger(Log.class.getName());
-	
-		private static Logger logger = LogManager.getLogger(Log.class);
+	    	
+	    private static final Logger log = LogManager.getLogger(Log.class);
 		
-		public static void startTestCase(String testCaseName){		  
+		public static void startTestCase(String testCaseName){	
 			
-			logger.info(
-			"========="
-			+ testCaseName 
-			+ "TEST START==============");
+			log.info("===============================");
+			log.info("TEST STARTED : {}", testCaseName);
+			log.info("===============================");
 		}
 		
 		public static void endTestCase(String testCaseName){
 			
-			logger.info(
-			"=========="
-			+testCaseName
-			+" TEST END=============");
+			log.info("=============================");
+		    log.info("TEST ENDED : {}", testCaseName);
+		    log.info("=============================");
 		}
 		
 		// Need to create below methods, so that they can be called  
 
 		 public static void info(String message) {
 
-			logger.info(message);
+			 log.info(message);
 		 }
 
 		 public static void warn(String message) {
 
-		    logger.warn(message);
+			 log.warn(message);
 		 }
-
+		 
 		 public static void error(String message) {
+			    log.error(message);
+			}
 
-		    logger.error(message);
+		 public static void error(String message, Throwable t) {
+
+			 log.error(message, t);
 		 }		
 
 		 public static void fatal(String message) {
 
-		    logger.fatal(message);
+			 log.fatal(message);
 		 }
 
 		 public static void debug(String message) {
 
-		    logger.debug(message);
+			 log.debug(message);
 		 }
 }

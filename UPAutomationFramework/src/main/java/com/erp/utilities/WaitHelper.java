@@ -1,7 +1,6 @@
 package com.erp.utilities;
-
 import java.time.Duration;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +14,6 @@ public class WaitHelper {
 	private WebDriverWait wait;
 	
 	private static final int DEFAULT_TIMEOUT =30;
-	
 	
 	// default wait (20 second)
 	public WaitHelper(WebDriver driver) {
@@ -41,6 +39,12 @@ public class WaitHelper {
 	// click
 	public void click(WebElement element) {
 		waitForClickable(element).click();
+	}
+	
+	//click
+	public void click(By locator) {
+	    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+	    element.click();
 	}
 	
 	//send keys
@@ -84,7 +88,5 @@ public class WaitHelper {
     public  void mouseHover(WebElement element) {
     	Actions actions = new Actions(driver);
     	actions.moveToElement(element).perform();
-    	
     }
-
 }

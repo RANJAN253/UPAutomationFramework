@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.erp.testcases.TC4_SaleDataMaster">
+      <class name="com.erp.testcases.TC7_SalaryArrearTestCase">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifySaleDateMasterCreation"/>
+          <include name="verifySalaryArrearEntry"/>
         </methods>
-      </class> <!-- com.erp.testcases.TC4_SaleDataMaster -->
+      </class> <!-- com.erp.testcases.TC7_SalaryArrearTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

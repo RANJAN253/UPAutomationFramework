@@ -50,8 +50,8 @@ public class PlotMasterPage extends BaseClass
 	 // Constructor
 	 public PlotMasterPage() {
 
-	     PageFactory.initElements(driver, this);
-	     waithelper = new WaitHelper(driver);
+	     PageFactory.initElements(getDriver(), this);
+	     waithelper = new WaitHelper(getDriver());
 	 }
 
 	 public void selectLocation(String location) {
@@ -69,7 +69,7 @@ public class PlotMasterPage extends BaseClass
 	    // Click Plot Master
 	    public void clickPlotMaster() {
 
-	        Actions action = new Actions(driver);
+	        Actions action = new Actions(getDriver());
 	        action.moveToElement(masters).perform();
 
 	        waithelper.click(plot_master);

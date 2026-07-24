@@ -10,12 +10,12 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 
 	@Test(priority=1,enabled = true)
 		public void createENoteSheet() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("dsmluc");
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
 
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			notesheet.clickOnModule();
 			notesheet.Action();
 			notesheet.clickOnEnoteSheetNew();
@@ -38,12 +38,12 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 		}
 		@Test(priority=2)
 		public void statusENoteSheet2() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("ag3.2dsmlko");
 			Thread.sleep(1000);
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			notesheet.clickOnModule();
 			notesheet.Action();
 			notesheet.clickOnENoteSheetStatus();
@@ -61,13 +61,13 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 		
 		@Test(priority=3, enabled = false)
 		public void statusENoteSheet3() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("cao");
 			Thread.sleep(1000);
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
 
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			
 			notesheet.clickOnModule();
 			notesheet.Action();
@@ -87,13 +87,13 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 		
 		@Test(priority=4, enabled = false)
 		public void statusENoteSheet4() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("rmlko");
 			Thread.sleep(1000);
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
 
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			
 			notesheet.clickOnModule();
 			notesheet.Action();
@@ -113,13 +113,13 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 		
 		@Test(priority=5, enabled = false)
 		public void statusENoteSheet5() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("gmsale");
 			Thread.sleep(1000);
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
 
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			
 			notesheet.clickOnModule();
 			notesheet.Action();
@@ -139,13 +139,13 @@ public class TC6_E_NoteSheetTestCase extends BaseClass {
 		
 		@Test(priority=6, enabled = false)
 		public void statusENoteSheet6() throws InterruptedException, IOException {
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			lp.enterUsername("ag3.2dsmlko");
 			Thread.sleep(1000);
 			lp.enterPassword("123456");
 			lp.clickLoginButton();
 
-			ENoteSheetPage notesheet = new ENoteSheetPage(driver);
+			ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
 			
 			notesheet.clickOnModule();
 			notesheet.Action();

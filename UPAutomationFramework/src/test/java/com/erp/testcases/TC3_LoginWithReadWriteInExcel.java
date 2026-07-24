@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
 import com.erp.pages.LoginPage;
+import com.erp.utilities.Log;
 import com.erp.utilities.ReadFromExcel;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
@@ -16,14 +17,14 @@ public class TC3_LoginWithReadWriteInExcel extends BaseClass {
 	
 	@Test(dataProvider = "LoginData", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyLoginDDT(String username, String password, String status, int rowNo) throws Exception {
-		loginPage = new LoginPage(driver);
-	    wait = new WaitHelper(driver);
-        logger.info("Executing Row : " + rowNo);
+		loginPage = new LoginPage(getDriver());
+	    wait = new WaitHelper(getDriver());
+        Log.info("Executing Row : " + rowNo);
         loginPage.loginWith(username, password);
         boolean loginSuccess = false;
         try {
         	wait.waitForTitle("Forest Corporation");
-        	if(driver.getTitle().contains("Forest Corporation")) {
+        	if(getDriver().getTitle().contains("Forest Corporation")) {
         		loginSuccess = true;
         	}
         }catch(Exception e) {
@@ -36,7 +37,7 @@ public class TC3_LoginWithReadWriteInExcel extends BaseClass {
 	    	{
 	    	if(loginSuccess) {
 	    		excel.setCellData("login2", rowNo, 3, "Pass");
-	    		logger.info("Valid Login Passed");
+	    		Log.info("Valid Login Passed");
 	    		loginPage.clickLogoutButton();
 	    		Assert.assertTrue(true);
 	    		}
@@ -58,7 +59,7 @@ public class TC3_LoginWithReadWriteInExcel extends BaseClass {
 	            else
 	            {
 	            	excel.setCellData("login2", rowNo, 3, "Pass");
-	            	logger.info("Invalid Login Passed");
+	            	Log.info("Invalid Login Passed");
 	            	Assert.assertTrue(true);
 	            }
 	    	}
