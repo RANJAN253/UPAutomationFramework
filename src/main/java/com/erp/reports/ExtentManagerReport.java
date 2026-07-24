@@ -17,6 +17,8 @@ public class ExtentManagerReport {
 	 	 if (extent == null) {
 	 		 String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 	 		 String reportPath = System.getProperty("user.dir") +"/Reports/ExtentReport_" + timestamp + ".html";
+	 		 System.out.println("Extent Report Path : " + reportPath);
+	 		 
 	 		 ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 	 		 
 	 		 spark.config().setDocumentTitle("ERP Automation Report");
