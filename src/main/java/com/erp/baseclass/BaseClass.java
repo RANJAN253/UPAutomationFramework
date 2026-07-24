@@ -57,7 +57,7 @@ public class BaseClass {
 
 		    options.setExperimentalOption("prefs", prefs);
 		    
-		    setDriver(new ChromeDriver(options));  //Thread
+		    setDriver(new ChromeDriver(options));  
 		    
 		} else if(br.equalsIgnoreCase("firefox")) {
 		  WebDriverManager.firefoxdriver().setup();
