@@ -12,7 +12,7 @@ public class TC1_LoginTestCase extends BaseClass
 	LoginPage loginPage;
     WaitHelper wait;
 
-    @Test(priority = 1, retryAnalyzer = RetryAnalyzer.class, description = "Verify Login with Valid Credentials")
+    @Test(groups= {"Smoke"}, priority = 1, retryAnalyzer = RetryAnalyzer.class, description = "Verify Login with Valid Credentials")
     public void verifyLogin() {
     	
     	Log.info("=========== LOGIN TEST STARTED ===========");
@@ -20,7 +20,6 @@ public class TC1_LoginTestCase extends BaseClass
     	loginPage = new LoginPage(getDriver());
         wait = new WaitHelper(getDriver());
 
-        // Login ********
         loginPage.loginWith(username, password);
         Log.info("Entered Username : " + username);
        
@@ -32,7 +31,7 @@ public class TC1_LoginTestCase extends BaseClass
         
         Log.info("Actual Title : " + actualTitle);
         
-        Assert.assertEquals(actualTitle,expectedTitle,"Login Failed - Dashboard Title Mismatch");
+        Assert.assertEquals(actualTitle,expectedTitle,"Login Failed");
         Log.info("Login Successful");
 
         // Logout

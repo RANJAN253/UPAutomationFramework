@@ -1,62 +1,44 @@
 package com.erp.pages;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import com.erp.baseclass.BaseClass;
+import com.erp.utilities.WaitHelper;
 
-public class ENoteSheetPage {
-	WebDriver ldriver;
+public class ENoteSheetPage extends BaseClass {
+	WebDriver driver;
+	WaitHelper wait;
 
 	public ENoteSheetPage(WebDriver rdriver) 	{ //constructor
-		ldriver = rdriver;
+		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
+		 wait = new WaitHelper(driver);
 	}  
 	
-	@FindBy(id="R_txtLogin")
-	WebElement userid;
-	
-	@FindBy(id="R_txtPass")
-	WebElement pwd;
-	
-	@FindBy(xpath="//input[@name='btnLogin']")
-	WebElement btnLogin;
-	
-	@FindBy(partialLinkText ="Shiv kumar Verma")
-	WebElement transcend;
-	
-	@FindBy(partialLinkText ="Arun Kumar")
-	WebElement transcend1;
-	
-	@FindBy(xpath="//a[normalize-space()='Logout']")
-	WebElement Logout;
-	
-	@FindBy(linkText="E-Note Sheet")
+	@FindBy(xpath="//a[normalize-space()='E-Note Sheet']")  //h3[normalize-space()='E-Note Sheet']
 	WebElement notesheet_Module;
 	
 	@FindBy(linkText="E-Note Sheet")
 	WebElement enotesheet_masters;
 	
-	@FindBy(linkText="E-Note Sheet [New]")
+	@FindBy(xpath="//a[contains(text(),'E-Note Sheet [New]')]")
 	WebElement notesheet_new;
-	
-	@FindBy(linkText="E-Note Sheet Status [New]")
-	WebElement notesheetstatus;
-	
-	@FindBy(xpath="//a[@id='ctl00_ContentPlaceHolder1_dgPending_ctl02_lnkView']//img")
-	WebElement clickView;
 	
 	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1']")
 	WebElement selectstatus;
 	
-	@FindBy(xpath="//select[@id='ctl00_ContentPlaceHolder1_D_ddlFileCategory']")
+	@FindBy(id="ctl00_ContentPlaceHolder1_D_ddlFileCategory")
 	WebElement selectnotesheetcategory;
 	
-	@FindBy(xpath="//select[@id='ctl00_ContentPlaceHolder1_D_ddlFileSubCategory']")
+	@FindBy(id="ctl00_ContentPlaceHolder1_D_ddlFileSubCategory")
 	WebElement selectnotesheetsubcategory;
 	
-	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_R_txtDocNo']")
+	@FindBy(id="ctl00_ContentPlaceHolder1_R_txtDocNo")
 	WebElement enterdocnumber;
 	
 	@FindBy(id ="ctl00_ContentPlaceHolder1_R_txtSubject")
@@ -68,37 +50,49 @@ public class ENoteSheetPage {
 	@FindBy(xpath = "//iframe[@title='Rich text editor, ctl00_ContentPlaceHolder1_txtComment']")
 	WebElement notesheetcomment;
 	
-	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_btnSave']")
+	@FindBy(id="ctl00_ContentPlaceHolder1_flUploadFile")
+	WebElement fileupload;
+	
+	@FindBy(id ="ctl00_ContentPlaceHolder1_btnAddFile")
+	WebElement addButton;
+	
+	@FindBy(id="ctl00_ContentPlaceHolder1_btnSave")
 	WebElement btnSubmit;
 	
-	public void enterusername(String username)	{
-		userid.sendKeys(username);
-	}
+	@FindBy(linkText="E-Note Sheet Status [New]")
+	WebElement notesheetstatus;
 	
-	public void enterpassword(String password)	{
-		pwd.sendKeys(password);
-	}
+	@FindBy(xpath="//a[@id='ctl00_ContentPlaceHolder1_dgPending_ctl02_lnkView']//img")
+	WebElement clickView;
 	
+	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1")
+	WebElement rdRecommended;
+
+	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl03_rdAppStatus_4")
+	WebElement rdConsent;
+	
+	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_5")
+	WebElement rdRejected;
+
+	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl06_rdAppStatus_1")
+	WebElement rdApproved;
+
 	public void clickOnModule() throws InterruptedException {
 	    notesheet_Module.click();
 	}
 	  
 	public void Action() throws InterruptedException	{
-		Actions action= new Actions(ldriver);
+		Actions action= new Actions(driver);
 	  	action.moveToElement(enotesheet_masters).build().perform();
-		
 	}
 	   
 	public void clickOnEnoteSheetNew() throws InterruptedException {
-	   notesheet_new.click();
+		notesheet_new.click();
 	}
 	
-	public void clickOnENoteSheetStatus() { 
-		  notesheetstatus.click(); 
-	 } 
-	 
 	public void clickonViewNoteSheet() {
-		  clickView.click();
+		wait.waitForVisibility(clickView);
+		clickView.click();
 	}
 	
 	public void  clickOnRecOption()  {
@@ -116,7 +110,7 @@ public class ENoteSheetPage {
 	}
 	
 	public void  enterDocNumber(String docnumber) throws InterruptedException {
-	  enterdocnumber.sendKeys(docnumber);
+		enterdocnumber.sendKeys(docnumber);
 	}
 	
 	public void enterSubject(String subject) { 
@@ -124,30 +118,80 @@ public class ENoteSheetPage {
 	} 
 	
 	public void enterDetails(String	details)	{ 
-		notesheetdetail.sendKeys(details);
+		//notesheetdetail.sendKeys(details);
+		wait.scrollToElement(notesheetdetail);
+	    driver.switchTo().frame(notesheetdetail);
+	    WebElement body = driver.findElement(By.tagName("body"));
+
+	    body.sendKeys(Keys.CONTROL + "a");
+	    body.sendKeys(Keys.DELETE);
+	    body.sendKeys(details);
+
+	    driver.switchTo().defaultContent();
 	} 
 	
 	public void  enterComment(String comment) { 
-		notesheetcomment.sendKeys(comment);
+		//notesheetcomment.sendKeys(comment);
+		wait.scrollToElement(notesheetcomment);
+		driver.switchTo().frame(notesheetcomment);
+		WebElement body = driver.findElement(By.tagName("body"));
+		 body.sendKeys(Keys.CONTROL + "a");  // Focus inside editor
+		 body.sendKeys(Keys.DELETE);         //if supported  body.click(), body.clear()
+		 body.sendKeys(comment);
+
+		 driver.switchTo().defaultContent();
 	}
 	
+	public void uploadFile(String filepath) {
+		fileupload.sendKeys(filepath);
+	}
+	
+	public void clickAddButton() {
+		addButton.click();
+	}
+		
 	public void clickOnSubmit() throws InterruptedException {
-		btnSubmit.click();
+		 wait.scrollToElement(btnSubmit);
+		 wait.click(btnSubmit);
+		//btnSubmit.click();
 	}
 	
-	public void ActionDsm() throws InterruptedException {
-		Actions action= new Actions(ldriver);
-		action.moveToElement(transcend).build().perform();
+	public void clickOnNewStatus() {
+		notesheetstatus.click();
 	}
 	
-	public void ActionAcc() throws InterruptedException {
-		  Actions action= new Actions(ldriver);
-		  action.moveToElement(transcend1).build().perform();
-	} 
-	
-	public void clickOnddlLogoutBtn() { 
-		  Logout.click();
+	public void clickOnView()
+	{
+		clickView.click();
 	}
-	  
-	 
+	
+	public void selectApprovalAction(String action)
+	{
+	    switch(action.toLowerCase())
+	    {
+	        case "recommended":
+	        	wait.scrollToElement(rdRecommended);
+	            wait.click(rdRecommended);
+	            break;
+
+	        case "consent":
+	        	wait.scrollToElement(rdConsent);
+	            wait.click(rdConsent);
+	            break;
+	            
+	        case "rejected":
+	        	wait.scrollToElement(rdApproved);
+	            wait.click(rdRejected);
+	            break;
+
+	        case "approved":
+	        	wait.scrollToElement(rdRejected);
+	            wait.click(rdApproved);
+	            break;
+
+	        
+	        default:
+	            throw new IllegalArgumentException("Invalid Action : " + action);
+	    }
+	}
 }

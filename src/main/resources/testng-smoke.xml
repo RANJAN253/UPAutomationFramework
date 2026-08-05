@@ -6,13 +6,20 @@
 	<listeners>
 		<listener class-name="com.erp.listeners.ExtentListener"/>
 	</listeners>
-
-	<test name="Smoke Test">
-	
-		<parameter name="browser" value="chrome"/>
 		
+	<test name="Smoke Suite From Jenkins">
+	
+	<parameter name="browser" value="chrome"/>
+	
+		<groups>
+			<run>
+				<include name="Smoke"/>
+			</run>
+		</groups>
+			
 		<classes>
-			<class name="com.erp.testcases.TC1_LoginTestCase"/>
+			<class name="com.erp.testcases.TC6_E_NoteSheetTestCase"/>
+			<class name="com.erp.testcases.TC7_E_NoteSheetStatusTestCase"/>
         </classes>
      
   	</test> <!-- Test -->

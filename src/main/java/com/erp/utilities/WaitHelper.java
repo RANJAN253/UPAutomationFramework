@@ -1,6 +1,7 @@
 package com.erp.utilities;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +16,7 @@ public class WaitHelper {
 	
 	private static final int DEFAULT_TIMEOUT =30;
 	
-	// default wait (20 second)
+	// default wait (30 second)
 	public WaitHelper(WebDriver driver) {
 		this(driver,DEFAULT_TIMEOUT);
 	}
@@ -26,12 +27,12 @@ public class WaitHelper {
 		wait = new WebDriverWait(driver,Duration.ofSeconds(timeout));
 	}
 	
-	// wait for visibility
+	//wait for visibilityOf-The element is already found, but you want to wait until it becomes visible.
 	public WebElement waitForVisibility(WebElement element) {
 		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	// wait for clickable
+	// wait for clickable - You want to wait until the button is clickable before clicking. 
 	public WebElement waitForClickable(WebElement element) {
 	    return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
@@ -75,7 +76,7 @@ public class WaitHelper {
         wait.until(ExpectedConditions.alertIsPresent());
     }
 
-    // Wait for Invisibility
+    // Wait for Invisibility-  Waiting for a loading spinner or progress bar to disappear. 
     public void waitForInvisibility(WebElement element) {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
@@ -88,5 +89,14 @@ public class WaitHelper {
     public  void mouseHover(WebElement element) {
     	Actions actions = new Actions(driver);
     	actions.moveToElement(element).perform();
+    }
+    
+    public void scrollToElement(WebElement element)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript(
+            "arguments[0].scrollIntoView({block:'center'});",
+            element);
     }
 }

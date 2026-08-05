@@ -26,7 +26,6 @@ public class SaleDateMasterPage extends BaseClass{
 	     wait = new WaitHelper(driver);
 	 }
 	 
-	 // Locators
 	 @FindBy(xpath = "//h3[normalize-space()='Sales']")
 	 WebElement salesModule;
 
@@ -69,8 +68,7 @@ public class SaleDateMasterPage extends BaseClass{
 	 @FindBy(linkText = "Home")
 	 WebElement home;
 
-	 
-	 // Click Sales Module
+	  // Click Sales Module
 	 public void clickSalesModule() {
 		 wait.click(salesModule);
 	 }
@@ -80,7 +78,6 @@ public class SaleDateMasterPage extends BaseClass{
 		 
 		 wait.waitForVisibility(depotMaster);
 		 action.moveToElement(depotMaster).perform();
-		 
 		 wait.click(saleDateMaster);
 	 }
 	 

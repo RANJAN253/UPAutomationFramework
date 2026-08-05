@@ -13,8 +13,8 @@
 <parameter name="browser" value="chrome"/>
 
    <classes>
-     <class name="com.erp.testcases.TC1_LoginTestCase"/>
-     <!--  <class name="com.erp.testcases.TC2_LoginWithDataDriven"/>-->
+     <class name="com.erp.testcases.TC6_E_NoteSheetTestCase"/>
+	<class name="com.erp.testcases.TC7_E_NoteSheetStatusTestCase"/>
      <!--  <class name="com.erp.testcases.TC3_LoginWithReadWriteInExcel"/>-->
      <!--  <class name="com.erp.testcases.TC4_SaleDataMaster"/>-->
     </classes>

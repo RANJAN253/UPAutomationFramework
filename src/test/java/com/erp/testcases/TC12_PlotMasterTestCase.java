@@ -8,7 +8,7 @@ import com.erp.pages.PlotMasterPage;
 import com.erp.utilities.Log;
 import com.erp.utilities.ScreenshotUtility;
 
-public class TC3_PlotMasterTestCase extends BaseClass {
+public class TC12_PlotMasterTestCase extends BaseClass {
 	//@Test(dataProvider="PlotData")
 	@Test
 	public void addPlotMaster() throws InterruptedException, IOException {

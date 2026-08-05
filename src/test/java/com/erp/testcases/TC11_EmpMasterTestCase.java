@@ -7,7 +7,7 @@ import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 
 @Test
-public class TC4_EmpMasterTestCase extends BaseClass {
+public class TC11_EmpMasterTestCase extends BaseClass {
 	
 	public void addPlotMaster() throws InterruptedException, IOException {
 		
