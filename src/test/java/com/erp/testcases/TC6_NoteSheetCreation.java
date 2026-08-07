@@ -10,11 +10,9 @@ public class TC6_NoteSheetCreation extends BaseClass {
 
 	@Test
 	public void createE_NoteSheet() throws InterruptedException, IOException {
-		Log.info("========== E-Note Sheet Test Started ==========");
+		Log.info("========== E-Note Sheet Created ==========");
 		
 		LoginPage lp = new LoginPage(getDriver());
-	//	lp.loginWith(username, password);
-	//	lp.loginWith("dsmluc", "123456");
 		lp.enterUsername("dsmluc");
 		lp.enterPassword("123456");
 		lp.clickLoginButton();

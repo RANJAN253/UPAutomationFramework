@@ -9,7 +9,7 @@ import com.erp.utilities.Log;
 public class TC7_NoteSheetRecommendation extends BaseClass{
 	
 	@Test(priority=1,enabled = true)
-	public void createE_NoteSheet() throws InterruptedException, IOException {
+	public void recommendedE_NoteSheet() throws InterruptedException, IOException {
 		Log.info("========== E- Note Sheet Recommendation Started ==========");
 		
 		LoginPage lp = new LoginPage(getDriver());

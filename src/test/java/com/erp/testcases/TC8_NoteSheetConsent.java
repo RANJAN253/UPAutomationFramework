@@ -9,8 +9,8 @@ import com.erp.utilities.Log;
 public class TC8_NoteSheetConsent extends BaseClass{
 	
 	@Test(priority=1,enabled = true)
-	public void createE_NoteSheet() throws InterruptedException, IOException {
-		Log.info("========== E-Note Sheet Test New Status Page Started ==========");
+	public void consentE_NoteSheet() throws InterruptedException, IOException {
+		Log.info("========== E-Note Sheet Test Consent ==========");
 		
 		LoginPage lp = new LoginPage(getDriver());
 		//lp.loginWith("ag3.2dsmlko", "123456");
