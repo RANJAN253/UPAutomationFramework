@@ -390,3 +390,12 @@ Session ID: 215e7bfb5d507a8cb21d7aaaf147c5ef
 2026-08-05 15:32:16,515 [main] INFO  com.erp.utilities.Log - =============================
 2026-08-05 15:32:16,525 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
 2026-08-05 15:32:16,526 [main] INFO  com.erp.utilities.Log - =============================
+2026-08-21 10:12:42,949 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-08-21 10:12:44,275 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-08-21 10:12:44,286 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-08-21 10:12:44,663 [main] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-08-21 10:12:46,346 [main] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-08-21 10:12:46,348 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - Logout Successful
+2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-08-21 10:12:48,203 [main] INFO  com.erp.utilities.Log - Closing Browser

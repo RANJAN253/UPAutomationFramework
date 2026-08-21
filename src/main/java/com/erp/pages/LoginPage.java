@@ -1,4 +1,5 @@
 package com.erp.pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,31 +17,27 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
         wait = new WaitHelper(driver);
     }
-
-    @FindBy(id = "R_txtLogin")
-    WebElement txtUsername;
-
-    @FindBy(id = "R_txtPass")
-    WebElement txtPassword;
-
-    @FindBy(id = "btnLogin")
-    WebElement loginButton;
+    // By Locator Wait
+    private By txtUsername = By.id("R_txtLogin");
+    private By txtPass = By.id("R_txtPass"); 
+    private By loginButton = By.id("btnLogin");
     
+    // By WebElement Wait Option
     @FindBy(xpath = "//a[@id='ctl00_lblLoginName']")
-    WebElement profileMenu;
+    private WebElement profileMenu;
 
     @FindBy(xpath = "//a[normalize-space()='Logout']")
-    WebElement btnLogout;
+    private WebElement btnLogout;
     
     @FindBy(xpath="//a[normalize-space()='DashBoard']")
-    WebElement dashboard;
+    private  WebElement dashboard;
     
     public void enterUsername(String username) {
         wait.sendKeys(txtUsername, username);
     }
 
     public void enterPassword(String password) {
-        wait.sendKeys(txtPassword, password);
+        wait.sendKeys(txtPass, password);
     }
 
     public void clickLoginButton() {
