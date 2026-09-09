@@ -9,7 +9,7 @@ import com.erp.utilities.Log;
 import com.erp.utilities.ReadFromExcel;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
-public class TC3_LoginWithReadWriteInExcel extends BaseClass {
+public class TC03_LoginWithReadWriteInExcel extends BaseClass {
 	
 	LoginPage loginPage;
 	WaitHelper wait;

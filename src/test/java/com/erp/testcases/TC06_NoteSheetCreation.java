@@ -6,7 +6,7 @@ import com.erp.pages.ENoteSheetPage;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 
-public class TC6_NoteSheetCreation extends BaseClass {
+public class TC06_NoteSheetCreation extends BaseClass {
 
 	@Test
 	public void createE_NoteSheet() throws InterruptedException, IOException {

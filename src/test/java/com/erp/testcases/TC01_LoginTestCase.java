@@ -7,7 +7,7 @@ import com.erp.utilities.Log;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
 
-public class TC1_LoginTestCase extends BaseClass
+public class TC01_LoginTestCase extends BaseClass
 {
 	LoginPage loginPage;
     WaitHelper wait;

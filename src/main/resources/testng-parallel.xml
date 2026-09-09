@@ -5,7 +5,6 @@
 
 <listeners>
 	<listener class-name="com.erp.listeners.ExtentListener"/>
-	<!-- <listener class-name="com.erp.reports.ExtentManagerReport"/>-->
 </listeners>
 
 <test name="Chrome">

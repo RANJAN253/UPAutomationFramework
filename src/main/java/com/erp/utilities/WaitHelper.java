@@ -1,5 +1,6 @@
 package com.erp.utilities;
 import java.time.Duration;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -133,8 +134,24 @@ public class WaitHelper {
  	// ALERT
  	// ==========================================================
     
-    public void waitForAlert() {
-        wait.until(ExpectedConditions.alertIsPresent());
+    public Alert waitForAlert() {
+       return wait.until(ExpectedConditions.alertIsPresent());
+    }
+    
+    public void acceptAlert() {
+    	waitForAlert().accept();
+    }
+    
+    public void dismissAlert() {
+    	waitForAlert().dismiss();
+    }
+    
+    public String getAlertText() {
+    	return waitForAlert().getText();
+    }
+    
+    public void enterAlertText(String text) {
+    	waitForAlert().sendKeys(text);
     }
 
     // ==========================================================    		
@@ -160,7 +177,6 @@ public class WaitHelper {
     public void scrollToElement(WebElement element)
     {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
         js.executeScript(
             "arguments[0].scrollIntoView({block:'center'});",
             element);

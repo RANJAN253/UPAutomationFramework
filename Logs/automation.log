@@ -399,3 +399,28 @@ Session ID: 215e7bfb5d507a8cb21d7aaaf147c5ef
 2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - Logout Successful
 2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
 2026-08-21 10:12:48,203 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-08-21 11:09:35,585 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-08-21 11:09:37,013 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-08-21 11:09:37,029 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-08-21 11:09:37,884 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-08-21 11:09:38,168 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-08-21 11:10:39,623 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
+2026-08-21 11:10:39,761 [main] INFO  com.erp.utilities.Log - Select Category
+2026-08-21 11:10:40,909 [main] INFO  com.erp.utilities.Log - Select Sub Category
+2026-08-21 11:10:42,051 [main] INFO  com.erp.utilities.Log - Enter Document Number
+2026-08-21 11:10:43,199 [main] INFO  com.erp.utilities.Log - Enter the Subject
+2026-08-21 11:10:44,507 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
+2026-08-21 11:10:45,749 [main] INFO  com.erp.utilities.Log - Enter Commit
+2026-08-21 11:10:47,842 [main] INFO  com.erp.utilities.Log - File Upload Successfully
+2026-08-21 11:10:50,047 [main] INFO  com.erp.utilities.Log - File Add Successfully
+2026-08-21 11:11:21,449 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
+2026-08-21 11:11:21,465 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-09 15:35:41,171 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-09 15:35:43,332 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-09 15:35:43,362 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
+2026-09-09 15:35:44,122 [main] INFO  com.erp.utilities.Log - Entered Username : transcend
+2026-09-09 15:35:46,304 [main] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
+2026-09-09 15:35:46,455 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-09 15:35:47,448 [main] INFO  com.erp.utilities.Log - Logout Successful
+2026-09-09 15:35:47,448 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
+2026-09-09 15:35:47,460 [main] INFO  com.erp.utilities.Log - Closing Browser

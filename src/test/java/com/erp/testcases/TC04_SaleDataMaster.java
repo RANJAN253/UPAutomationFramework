@@ -8,7 +8,7 @@ import com.erp.utilities.Log;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
 
-public class TC4_SaleDataMaster extends BaseClass {
+public class TC04_SaleDataMaster extends BaseClass {
 	LoginPage loginPage;
     SaleDateMasterPage salePage;
     WaitHelper wait;

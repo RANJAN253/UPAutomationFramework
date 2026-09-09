@@ -6,7 +6,7 @@ import com.erp.pages.ENoteSheetPage;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 
-public class TC8_NoteSheetConsent extends BaseClass{
+public class TC08_NoteSheetConsent extends BaseClass{
 	
 	@Test(priority=1,enabled = true)
 	public void consentE_NoteSheet() throws InterruptedException, IOException {

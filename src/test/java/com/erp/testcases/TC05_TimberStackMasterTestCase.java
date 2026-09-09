@@ -6,7 +6,7 @@ import com.erp.pages.LoginPage;
 import com.erp.pages.TimberStackMasterPage;
 import com.erp.utilities.Log;
 
-public class TC5_TimberStackMasterTestCase extends BaseClass {
+public class TC05_TimberStackMasterTestCase extends BaseClass {
 	@Test
 	public void stackMaster() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(getDriver());

@@ -20,6 +20,7 @@ public class BaseClass {
 	//public static WebDriver driver;
 	
 	ReadConfig readconfig=new ReadConfig();
+	
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
@@ -35,11 +36,9 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String br) {
-	//public void setUp(String br)  {
 		try {
-		if(br.equalsIgnoreCase("chrome")) {
-			//WebDriverManager.chromedriver().setup();
-			 ChromeOptions options = new ChromeOptions();
+			if(br.equalsIgnoreCase("chrome")) {
+			ChromeOptions options = new ChromeOptions();
 
 			// 🔥 MUST (fresh + clean session)
 			 options.addArguments("--disable-notifications");
@@ -76,11 +75,11 @@ public class BaseClass {
 			 
 		getDriver().manage().window().maximize();  
 		getDriver().manage().deleteAllCookies();
+		
 		getDriver().get(baseURL);	  
 		Log.info("Application URL : " + baseURL);
 				 
 		} catch (Exception e ){
-			
 			Log.error("Failed to launch browser : " + br, e);
 		}
 	}
@@ -91,7 +90,6 @@ public class BaseClass {
 		if(getDriver()!=null) {  // Thread
 			getDriver().quit();
 			driver.remove();
-
 		}
 	} 
 }

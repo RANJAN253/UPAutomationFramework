@@ -10,7 +10,7 @@ import com.erp.utilities.Log;
 import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
 
-public class TC2_LoginWithDataDriven extends BaseClass{
+public class TC02_LoginWithDataDriven extends BaseClass{
 	
 	 LoginPage loginPage;
 	 WaitHelper wait;

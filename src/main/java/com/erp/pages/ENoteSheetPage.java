@@ -17,11 +17,10 @@ public class ENoteSheetPage extends BaseClass {
 	public ENoteSheetPage(WebDriver rdriver) 	{ //constructor
 		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
-		 wait = new WaitHelper(driver);
+		wait = new WaitHelper(driver);
 	}  
-	
-	@FindBy(xpath="//a[normalize-space()='E-Note Sheet']")  //h3[normalize-space()='E-Note Sheet']
-	WebElement notesheet_Module;
+	// private By txtUsername = By.id("R_txtLogin");
+	private By notesheet_Module = By.xpath("//a[normalize-space()='E-Note Sheet']");
 	
 	@FindBy(linkText="E-Note Sheet")
 	WebElement enotesheet_masters;
@@ -78,7 +77,7 @@ public class ENoteSheetPage extends BaseClass {
 	WebElement rdApproved;
 
 	public void clickOnModule() throws InterruptedException {
-	    notesheet_Module.click();
+	    wait.click(notesheet_Module);
 	}
 	  
 	public void Action() throws InterruptedException	{
@@ -183,7 +182,7 @@ public class ENoteSheetPage extends BaseClass {
 	        	wait.scrollToElement(rdApproved);
 	            wait.click(rdRejected);
 	            break;
-
+ 
 	        case "approved":
 	        	wait.scrollToElement(rdRejected);
 	            wait.click(rdApproved);

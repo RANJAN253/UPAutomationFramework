@@ -6,7 +6,7 @@ import com.erp.pages.ENoteSheetPage;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 
-public class TC9_NoteSheetRecommendation extends BaseClass{
+public class TC09_NoteSheetRecommendation extends BaseClass{
 	
 	@Test(priority=1,enabled = true)
 	public void createE_NoteSheet() throws InterruptedException, IOException {
