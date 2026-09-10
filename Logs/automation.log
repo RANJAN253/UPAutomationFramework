@@ -1,426 +1,157 @@
-2026-08-04 15:45:27,312 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-04 15:45:27,326 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:45:27,335 [main] INFO  com.erp.utilities.Log - TEST ENDED : Smoke Suite From Jenkins
-2026-08-04 15:45:27,338 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:46:23,111 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-04 15:46:23,124 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:46:23,134 [main] INFO  com.erp.utilities.Log - TEST ENDED : Smoke Suite From Jenkins
-2026-08-04 15:46:23,135 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:48:10,509 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-04 15:48:12,207 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-04 15:48:25,280 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-04 15:48:25,299 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-04 15:48:25,309 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test Started ==========
-2026-08-04 15:48:25,812 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-04 15:48:26,562 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-04 15:48:27,181 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-04 15:48:27,405 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Category
-2026-08-04 15:48:28,558 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Sub Category
-2026-08-04 15:48:29,682 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Document Number
-2026-08-04 15:48:30,874 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter the Subject
-2026-08-04 15:48:32,023 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Note Sheet Details
-2026-08-04 15:48:33,171 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Commit
-2026-08-04 15:48:35,221 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Upload Successfully
-2026-08-04 15:48:37,473 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Add Successfully
-2026-08-04 15:48:47,482 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
-2026-08-04 15:48:47,484 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-04 15:48:47,489 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-04 15:48:49,292 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-04 15:48:50,439 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-04 15:48:50,441 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-04 15:48:50,442 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-04 15:48:50,871 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-04 15:48:51,470 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-04 15:48:52,154 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-04 15:48:52,227 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-04 15:48:55,396 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommended Selected
-2026-08-04 15:49:00,563 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered
-2026-08-04 15:49:05,651 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommendation Successful
-2026-08-04 15:49:16,230 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-04 15:49:16,230 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-04 15:49:16,232 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-04 15:49:16,508 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:49:16,514 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
-2026-08-04 15:49:16,514 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:50:17,206 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-04 15:50:17,274 [main] ERROR com.erp.utilities.Log - Failed to launch browser : chrome
-org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=150.0.7871.187)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [215e7bfb5d507a8cb21d7aaaf147c5ef, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\TRANSC~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50748}, goog:processID: 6436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50748/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 215e7bfb5d507a8cb21d7aaaf147c5ef
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595) ~[selenium-remote-driver-4.21.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034) ~[selenium-remote-driver-4.21.0.jar:?]
-	at com.erp.baseclass.BaseClass.setUp(BaseClass.java:77) ~[classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:741) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.TestNG.runSuites(TestNG.java:1112) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.TestNG.run(TestNG.java:1079) [org.testng_7.11.0.r202503091654.jar:7.11.0]
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-2026-08-04 15:50:17,304 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test Started ==========
-2026-08-04 15:50:17,357 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-04 15:50:25,202 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-04 15:50:26,861 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-04 15:50:49,290 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-04 15:50:49,311 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-04 15:50:49,318 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test Started ==========
-2026-08-04 15:50:49,706 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-04 15:50:55,446 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-04 15:50:55,994 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-04 15:50:56,248 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Category
-2026-08-04 15:50:57,429 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Sub Category
-2026-08-04 15:50:58,567 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Document Number
-2026-08-04 15:50:59,665 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter the Subject
-2026-08-04 15:51:00,852 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Note Sheet Details
-2026-08-04 15:51:01,961 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Commit
-2026-08-04 15:51:04,054 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Upload Successfully
-2026-08-04 15:51:06,335 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Add Successfully
-2026-08-04 15:51:16,929 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
-2026-08-04 15:51:16,933 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-04 15:51:16,951 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-04 15:51:18,309 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-04 15:51:18,549 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-04 15:51:18,553 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-04 15:51:18,554 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-04 15:51:19,460 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-04 15:51:20,026 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-04 15:51:20,659 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-04 15:51:20,745 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-04 15:51:23,860 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommended Selected
-2026-08-04 15:51:29,023 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered
-2026-08-04 15:51:36,925 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommendation Successful
-2026-08-04 15:51:47,302 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-04 15:51:47,303 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-04 15:51:47,308 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-04 15:51:47,560 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-04 15:51:47,565 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
-2026-08-04 15:51:47,565 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 12:01:33,650 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:01:34,758 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:01:34,767 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:01:35,171 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:01:36,001 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:01:36,832 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:01:36,912 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:01:47,002 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 12:01:50,251 [main] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 12:01:55,341 [main] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 12:02:00,348 [main] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 12:02:00,364 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 12:06:28,423 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:06:36,246 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:06:36,268 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:06:36,677 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:06:43,615 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:06:44,292 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:06:44,374 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:06:54,486 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 12:06:59,653 [main] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 12:07:04,656 [main] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 12:07:09,659 [main] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 12:07:09,663 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 12:08:59,405 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:09:07,623 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:09:07,660 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:09:08,056 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:09:10,388 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:09:11,094 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:09:11,171 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:09:21,290 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 12:09:26,440 [main] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 12:41:31,428 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:41:35,940 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:41:35,958 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:41:36,372 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:41:37,299 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:41:38,015 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:41:38,098 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:43:19,437 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:43:31,298 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:43:31,321 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:43:31,821 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:43:43,544 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:43:44,201 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:43:44,289 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:43:44,320 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 12:50:11,405 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:50:25,141 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:50:25,153 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:50:25,800 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:50:39,028 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:50:39,746 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:50:39,833 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:50:39,867 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 12:55:50,930 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 12:55:57,220 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 12:55:57,230 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 12:55:57,675 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 12:56:10,759 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 12:56:11,430 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 12:56:21,668 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 12:56:21,811 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 12:56:51,968 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:13:34,853 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:13:41,202 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:13:41,221 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 13:13:41,634 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:13:42,140 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 13:13:42,829 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 13:13:52,918 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 13:13:53,115 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 13:13:53,198 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:20:00,235 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:20:00,611 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:20:00,630 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 13:20:01,514 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:20:02,139 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 13:20:02,825 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 13:20:12,902 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 13:20:13,080 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 13:20:13,159 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:20:38,148 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:20:45,612 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:20:45,647 [main] INFO  com.erp.utilities.Log - ========== Sale Date Master Test Started ==========
-2026-08-05 13:20:46,070 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:20:46,104 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:24:02,860 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:24:22,654 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:24:22,669 [main] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation Started ==========
-2026-08-05 13:24:23,091 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:24:24,621 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 13:24:25,723 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 13:24:25,800 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 13:24:28,958 [main] INFO  com.erp.utilities.Log - Recommended Selected
-2026-08-05 13:24:34,064 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:34:35,705 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:34:47,062 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:34:47,084 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 13:35:01,345 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:35:01,635 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 13:35:02,367 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 13:35:12,452 [main] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 13:35:12,632 [main] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 13:35:12,931 [main] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 13:35:13,491 [main] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 13:35:23,713 [main] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 13:35:23,719 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 13:46:37,652 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 13:46:40,789 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 13:46:40,822 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 13:46:43,327 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 13:46:43,366 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:03:08,798 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-05 15:03:12,950 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:03:25,735 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:03:25,749 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:03:25,765 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test Started ==========
-2026-08-05 15:03:26,201 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:03:33,944 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:03:44,758 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-05 15:03:44,892 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Category
-2026-08-05 15:03:46,047 [TestNG-test-Chrome-1] ERROR com.erp.utilities.Log - Test Failed : createE_NoteSheet
-2026-08-05 15:03:46,385 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:03:47,859 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:03:48,131 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:03:48,176 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:03:48,177 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation Started ==========
-2026-08-05 15:03:49,193 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:03:49,828 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:03:51,418 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:03:51,525 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:03:54,571 [TestNG-test-Chrome-1] ERROR com.erp.utilities.Log - Test Failed : createE_NoteSheet
-2026-08-05 15:03:54,721 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:03:55,977 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:03:57,088 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:03:57,088 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:03:57,088 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 15:03:58,009 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:03:58,185 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:03:59,744 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:04:09,827 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:04:09,977 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 15:04:10,315 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 15:04:10,947 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 15:04:11,465 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 15:04:11,466 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-05 15:04:11,468 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:04:11,722 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 15:04:11,722 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
-2026-08-05 15:04:11,722 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 15:13:38,341 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:13:45,718 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:13:45,754 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
-2026-08-05 15:13:46,196 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:13:47,264 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:13:47,804 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-05 15:13:48,040 [main] INFO  com.erp.utilities.Log - Select Category
-2026-08-05 15:13:49,210 [main] INFO  com.erp.utilities.Log - Select Sub Category
-2026-08-05 15:13:50,293 [main] INFO  com.erp.utilities.Log - Enter Document Number
-2026-08-05 15:13:51,470 [main] INFO  com.erp.utilities.Log - Enter the Subject
-2026-08-05 15:13:52,781 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
-2026-08-05 15:13:54,063 [main] INFO  com.erp.utilities.Log - Enter Commit
-2026-08-05 15:13:56,121 [main] INFO  com.erp.utilities.Log - File Upload Successfully
-2026-08-05 15:13:58,465 [main] INFO  com.erp.utilities.Log - File Add Successfully
-2026-08-05 15:14:09,107 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
-2026-08-05 15:14:09,123 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:21:39,316 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-05 15:21:41,015 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:22:00,115 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:22:00,131 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:22:00,152 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
-2026-08-05 15:22:00,536 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:22:00,565 [TestNG-test-Chrome-1] ERROR com.erp.utilities.Log - Test Failed : createE_NoteSheet
-2026-08-05 15:22:07,348 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:22:08,715 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:22:09,397 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:22:09,397 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:22:09,397 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation Started ==========
-2026-08-05 15:22:09,929 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:22:10,373 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:22:11,068 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:22:11,144 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:22:14,319 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommended Selected
-2026-08-05 15:22:19,570 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered
-2026-08-05 15:22:25,107 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommendation Successful
-2026-08-05 15:22:35,508 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 15:22:35,509 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-05 15:22:35,512 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:22:36,806 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:22:37,634 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:22:37,634 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:22:37,634 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test New Status Page Started ==========
-2026-08-05 15:22:38,066 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:22:51,685 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:22:52,332 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:23:02,418 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:23:02,582 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 15:23:02,851 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 15:23:03,312 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 15:23:03,797 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-05 15:23:03,798 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-05 15:23:03,802 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:23:04,042 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 15:23:04,042 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
-2026-08-05 15:23:04,042 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 15:30:11,876 [main] INFO  com.erp.utilities.Log - Extent Report Initialized
-2026-08-05 15:30:13,545 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:30:21,196 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:30:21,209 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : createE_NoteSheet
-2026-08-05 15:30:21,215 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
-2026-08-05 15:30:21,656 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:30:27,410 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:30:28,069 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-05 15:30:28,289 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Category
-2026-08-05 15:30:29,423 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Select Sub Category
-2026-08-05 15:30:30,536 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Document Number
-2026-08-05 15:30:31,704 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter the Subject
-2026-08-05 15:30:32,991 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Note Sheet Details
-2026-08-05 15:30:34,254 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Enter Commit
-2026-08-05 15:30:36,379 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Upload Successfully
-2026-08-05 15:30:38,715 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - File Add Successfully
-2026-08-05 15:30:49,286 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
-2026-08-05 15:30:49,286 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Passed : createE_NoteSheet
-2026-08-05 15:30:49,302 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:30:50,985 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:30:51,339 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:30:51,350 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : consentE_NoteSheet
-2026-08-05 15:30:51,353 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E-Note Sheet Test Consent ==========
-2026-08-05 15:30:52,537 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:30:59,222 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:30:59,837 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:31:09,931 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:31:10,089 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Click on Consent Radio Button
-2026-08-05 15:31:10,382 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered by CAO
-2026-08-05 15:31:10,516 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Submit Successfully
-2026-08-05 15:31:10,971 [TestNG-test-Chrome-1] ERROR com.erp.utilities.Log - Test Failed : consentE_NoteSheet
-2026-08-05 15:31:11,172 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:31:12,940 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-05 15:31:13,745 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-05 15:31:13,745 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Test Started : recommendedE_NoteSheet
-2026-08-05 15:31:13,745 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation Started ==========
-2026-08-05 15:31:14,249 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Login Successful
-2026-08-05 15:31:20,825 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-05 15:31:21,415 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
-2026-08-05 15:31:21,500 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - click on view Notesheet
-2026-08-05 15:31:24,627 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommended Selected
-2026-08-05 15:31:29,912 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Comment Entered
-2026-08-05 15:31:35,405 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Recommendation Successful
-2026-08-05 15:32:16,010 [TestNG-test-Chrome-1] ERROR com.erp.utilities.Log - Test Failed : recommendedE_NoteSheet
-2026-08-05 15:32:16,178 [TestNG-test-Chrome-1] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-05 15:32:16,515 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-05 15:32:16,525 [main] INFO  com.erp.utilities.Log - TEST ENDED : Chrome
-2026-08-05 15:32:16,526 [main] INFO  com.erp.utilities.Log - =============================
-2026-08-21 10:12:42,949 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-21 10:12:44,275 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-21 10:12:44,286 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
-2026-08-21 10:12:44,663 [main] INFO  com.erp.utilities.Log - Entered Username : transcend
-2026-08-21 10:12:46,346 [main] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
-2026-08-21 10:12:46,348 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - Logout Successful
-2026-08-21 10:12:48,188 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
-2026-08-21 10:12:48,203 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-08-21 11:09:35,585 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-08-21 11:09:37,013 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-08-21 11:09:37,029 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
-2026-08-21 11:09:37,884 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-08-21 11:09:38,168 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
-2026-08-21 11:10:39,623 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
-2026-08-21 11:10:39,761 [main] INFO  com.erp.utilities.Log - Select Category
-2026-08-21 11:10:40,909 [main] INFO  com.erp.utilities.Log - Select Sub Category
-2026-08-21 11:10:42,051 [main] INFO  com.erp.utilities.Log - Enter Document Number
-2026-08-21 11:10:43,199 [main] INFO  com.erp.utilities.Log - Enter the Subject
-2026-08-21 11:10:44,507 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
-2026-08-21 11:10:45,749 [main] INFO  com.erp.utilities.Log - Enter Commit
-2026-08-21 11:10:47,842 [main] INFO  com.erp.utilities.Log - File Upload Successfully
-2026-08-21 11:10:50,047 [main] INFO  com.erp.utilities.Log - File Add Successfully
-2026-08-21 11:11:21,449 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
-2026-08-21 11:11:21,465 [main] INFO  com.erp.utilities.Log - Closing Browser
-2026-09-09 15:35:41,171 [main] INFO  com.erp.utilities.Log - Launching chrome browser
-2026-09-09 15:35:43,332 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
-2026-09-09 15:35:43,362 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST STARTED ===========
-2026-09-09 15:35:44,122 [main] INFO  com.erp.utilities.Log - Entered Username : transcend
-2026-09-09 15:35:46,304 [main] INFO  com.erp.utilities.Log - Actual Title : Forest Corporation
-2026-09-09 15:35:46,455 [main] INFO  com.erp.utilities.Log - Login Successful
-2026-09-09 15:35:47,448 [main] INFO  com.erp.utilities.Log - Logout Successful
-2026-09-09 15:35:47,448 [main] INFO  com.erp.utilities.Log - =========== LOGIN TEST COMPLETED ===========
-2026-09-09 15:35:47,460 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:23,781 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:25,475 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:25,599 [main] INFO  com.erp.utilities.Log - Executing Row : 1
+2026-09-10 13:25:27,904 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:25:27,931 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:29,358 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:30,548 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:30,553 [main] INFO  com.erp.utilities.Log - Executing Row : 1
+2026-09-10 13:25:32,623 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:25:32,642 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:34,258 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:35,370 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:35,377 [main] INFO  com.erp.utilities.Log - Executing Row : 2
+2026-09-10 13:25:41,077 [main] INFO  com.erp.utilities.Log - Invalid Login Passed
+2026-09-10 13:25:41,082 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:42,734 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:43,913 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:43,914 [main] INFO  com.erp.utilities.Log - Executing Row : 3
+2026-09-10 13:25:45,593 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:25:45,612 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:47,123 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:48,086 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:48,090 [main] INFO  com.erp.utilities.Log - Executing Row : 3
+2026-09-10 13:25:49,904 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:25:49,926 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:51,383 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:52,560 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:52,567 [main] INFO  com.erp.utilities.Log - Executing Row : 4
+2026-09-10 13:25:55,513 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:25:55,538 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:25:57,078 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:25:57,625 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:25:57,635 [main] INFO  com.erp.utilities.Log - Executing Row : 4
+2026-09-10 13:26:00,468 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:26:00,489 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:26:01,972 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:26:02,967 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:26:02,971 [main] INFO  com.erp.utilities.Log - Executing Row : 5
+2026-09-10 13:26:04,765 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:26:04,787 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:26:06,538 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:26:07,332 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:26:07,339 [main] INFO  com.erp.utilities.Log - Executing Row : 5
+2026-09-10 13:26:09,712 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:26:09,718 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:26:11,567 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:26:12,739 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:26:12,741 [main] INFO  com.erp.utilities.Log - Executing Row : 6
+2026-09-10 13:26:18,262 [main] INFO  com.erp.utilities.Log - Invalid Login Passed
+2026-09-10 13:26:18,277 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:26:19,534 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:26:20,666 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:26:20,668 [main] INFO  com.erp.utilities.Log - Executing Row : 7
+2026-09-10 13:26:22,585 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:26:22,617 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 13:26:24,097 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 13:26:25,000 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 13:26:25,004 [main] INFO  com.erp.utilities.Log - Executing Row : 7
+2026-09-10 13:26:26,595 [main] INFO  com.erp.utilities.Log - Valid Login Passed
+2026-09-10 13:26:26,615 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 17:50:29,784 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 17:50:30,922 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 17:50:30,962 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-09-10 17:50:31,775 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 17:50:32,800 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-09-10 17:50:46,821 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
+2026-09-10 17:50:46,933 [main] INFO  com.erp.utilities.Log - Select Category
+2026-09-10 17:50:46,999 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 17:51:41,176 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 17:51:41,411 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 17:51:41,437 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-09-10 17:51:42,691 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 17:51:42,930 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-09-10 17:51:43,657 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
+2026-09-10 17:51:43,789 [main] INFO  com.erp.utilities.Log - Select Category
+2026-09-10 17:51:44,951 [main] INFO  com.erp.utilities.Log - Select Sub Category
+2026-09-10 17:51:46,165 [main] INFO  com.erp.utilities.Log - Enter Document Number
+2026-09-10 17:51:47,360 [main] INFO  com.erp.utilities.Log - Enter the Subject
+2026-09-10 17:51:48,707 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
+2026-09-10 17:51:49,969 [main] INFO  com.erp.utilities.Log - Enter Commit
+2026-09-10 17:51:52,053 [main] INFO  com.erp.utilities.Log - File Upload Successfully
+2026-09-10 17:51:54,642 [main] INFO  com.erp.utilities.Log - File Add Successfully
+2026-09-10 17:52:08,613 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
+2026-09-10 17:52:08,644 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:10:35,319 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:10:36,138 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:10:36,148 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-09-10 18:10:36,513 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:10:37,297 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-09-10 18:10:37,986 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet
+2026-09-10 18:10:38,164 [main] INFO  com.erp.utilities.Log - Select Category
+2026-09-10 18:10:39,292 [main] INFO  com.erp.utilities.Log - Select Sub Category
+2026-09-10 18:10:40,457 [main] INFO  com.erp.utilities.Log - Enter Document Number
+2026-09-10 18:10:41,649 [main] INFO  com.erp.utilities.Log - Enter the Subject
+2026-09-10 18:10:42,964 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
+2026-09-10 18:10:44,211 [main] INFO  com.erp.utilities.Log - Enter Commit
+2026-09-10 18:10:46,271 [main] INFO  com.erp.utilities.Log - File Upload Successfully
+2026-09-10 18:10:48,874 [main] INFO  com.erp.utilities.Log - File Add Successfully
+2026-09-10 18:10:59,376 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
+2026-09-10 18:11:00,335 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:20:18,125 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:20:18,980 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:20:18,993 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-09-10 18:20:19,462 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:20:20,291 [main] INFO  com.erp.utilities.Log - click on E-Note sheet Module
+2026-09-10 18:20:21,008 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet New
+2026-09-10 18:20:22,701 [main] INFO  com.erp.utilities.Log - Select Category
+2026-09-10 18:20:24,302 [main] INFO  com.erp.utilities.Log - Select Sub Category
+2026-09-10 18:20:24,444 [main] INFO  com.erp.utilities.Log - Enter Document Number
+2026-09-10 18:20:27,610 [main] INFO  com.erp.utilities.Log - Enter the Subject
+2026-09-10 18:20:29,530 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
+2026-09-10 18:20:31,787 [main] INFO  com.erp.utilities.Log - Enter Commit
+2026-09-10 18:20:33,851 [main] INFO  com.erp.utilities.Log - File Upload Successfully
+2026-09-10 18:20:39,086 [main] INFO  com.erp.utilities.Log - File Add Successfully
+2026-09-10 18:20:44,509 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
+2026-09-10 18:20:44,938 [main] INFO  com.erp.utilities.Log - Note Sheet Logout Successfully
+2026-09-10 18:20:44,942 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:20:46,421 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:20:48,475 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:20:48,482 [main] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation By Accountant ==========
+2026-09-10 18:20:48,745 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:20:49,658 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-09-10 18:20:55,214 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:24:20,889 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:24:21,654 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:24:21,667 [main] INFO  com.erp.utilities.Log - ========== E-Note Sheet Created ==========
+2026-09-10 18:24:22,069 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:24:22,955 [main] INFO  com.erp.utilities.Log - click on E-Note sheet Module
+2026-09-10 18:24:23,692 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet New
+2026-09-10 18:24:25,319 [main] INFO  com.erp.utilities.Log - Select Category
+2026-09-10 18:24:26,960 [main] INFO  com.erp.utilities.Log - Select Sub Category
+2026-09-10 18:24:27,094 [main] INFO  com.erp.utilities.Log - Enter Document Number
+2026-09-10 18:24:30,273 [main] INFO  com.erp.utilities.Log - Enter the Subject
+2026-09-10 18:24:32,188 [main] INFO  com.erp.utilities.Log - Enter Note Sheet Details
+2026-09-10 18:24:34,444 [main] INFO  com.erp.utilities.Log - Enter Commit
+2026-09-10 18:24:36,498 [main] INFO  com.erp.utilities.Log - File Upload Successfully
+2026-09-10 18:24:41,713 [main] INFO  com.erp.utilities.Log - File Add Successfully
+2026-09-10 18:24:47,115 [main] INFO  com.erp.utilities.Log - Note Sheet Submit Successfully
+2026-09-10 18:24:47,572 [main] INFO  com.erp.utilities.Log - Note Sheet Logout Successfully
+2026-09-10 18:24:47,579 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:24:49,218 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:24:49,939 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:24:49,954 [main] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation By Accountant ==========
+2026-09-10 18:24:50,386 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:24:50,873 [main] INFO  com.erp.utilities.Log - click on E-Note sheet
+2026-09-10 18:24:52,448 [main] INFO  com.erp.utilities.Log - Open on E-Note sheet Status
+2026-09-10 18:24:52,538 [main] INFO  com.erp.utilities.Log - click on view Notesheet
+2026-09-10 18:24:55,687 [main] INFO  com.erp.utilities.Log - Recommended Selected
+2026-09-10 18:25:00,986 [main] INFO  com.erp.utilities.Log - Comment Entered
+2026-09-10 18:25:06,808 [main] INFO  com.erp.utilities.Log - Recommendation Successful
+2026-09-10 18:25:17,178 [main] INFO  com.erp.utilities.Log - Logout Successful
+2026-09-10 18:25:17,181 [main] INFO  com.erp.utilities.Log - Closing Browser
+2026-09-10 18:26:57,703 [main] INFO  com.erp.utilities.Log - Launching chrome browser
+2026-09-10 18:26:58,588 [main] INFO  com.erp.utilities.Log - Application URL : http://upstaging.upfcerp.com/
+2026-09-10 18:26:58,630 [main] INFO  com.erp.utilities.Log - ========== E- Note Sheet Recommendation By Accountant ==========
+2026-09-10 18:26:59,008 [main] INFO  com.erp.utilities.Log - Login Successful
+2026-09-10 18:26:59,330 [main] INFO  com.erp.utilities.Log - Closing Browser

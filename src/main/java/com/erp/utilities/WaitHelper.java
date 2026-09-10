@@ -15,9 +15,9 @@ public class WaitHelper {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	
-	private static final int DEFAULT_TIMEOUT =30;
+	private static final int DEFAULT_TIMEOUT =5;
 	
-	// default wait (30 second)
+	// default wait (20 second)
 	public WaitHelper(WebDriver driver) {
 		this(driver,DEFAULT_TIMEOUT);
 	}
@@ -181,4 +181,19 @@ public class WaitHelper {
             "arguments[0].scrollIntoView({block:'center'});",
             element);
     }
+    
+    public void scrollToElement(By locator) {
+
+        WebElement element = waitForVisibility(locator);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript(
+            "arguments[0].scrollIntoView({block:'center'});",
+            element
+        );
+    }
+    
+    
+    
 }

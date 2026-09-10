@@ -17,32 +17,41 @@ public class TC03_LoginWithReadWriteInExcel extends BaseClass {
 	
 	@Test(dataProvider = "LoginData", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyLoginDDT(String username, String password, String status, int rowNo) throws Exception {
+		
 		loginPage = new LoginPage(getDriver());
+		
 	    wait = new WaitHelper(getDriver());
+	    
         Log.info("Executing Row : " + rowNo);
+        
         loginPage.loginWith(username, password);
+        
         boolean loginSuccess = false;
+        
         try {
         	wait.waitForTitle("Forest Corporation");
         	if(getDriver().getTitle().contains("Forest Corporation")) {
         		loginSuccess = true;
+        		
+        		loginPage.clickLogoutButton();
         	}
         }catch(Exception e) {
         	loginSuccess = false;
         }
         
         ReadFromExcel excel = new ReadFromExcel(path);
+        
         // VALID USER
 	    if(status.equalsIgnoreCase("Valid"))
 	    	{
 	    	if(loginSuccess) {
 	    		excel.setCellData("login2", rowNo, 3, "Pass");
 	    		Log.info("Valid Login Passed");
+	    		
 	    		loginPage.clickLogoutButton();
 	    		Assert.assertTrue(true);
 	    		}
-	            else
-	            {
+	            else {
 	            	excel.setCellData("login2", rowNo, 3, "Failed");
 	            	Assert.fail("Valid Login Failed");
 	            }
@@ -50,14 +59,12 @@ public class TC03_LoginWithReadWriteInExcel extends BaseClass {
 	    // INVALID USER
 	    else if(status.equalsIgnoreCase("Invalid"))
 	    	{
-	    	if(loginSuccess)
-	    		{
+	    	if(loginSuccess) {
 	    		excel.setCellData("login2", rowNo, 3, "Failed");
 	    		loginPage.clickLogoutButton();
 	    		Assert.fail("Invalid Login Passed");
 	    		}
-	            else
-	            {
+	            else  {
 	            	excel.setCellData("login2", rowNo, 3, "Pass");
 	            	Log.info("Invalid Login Passed");
 	            	Assert.assertTrue(true);

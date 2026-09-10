@@ -11,7 +11,6 @@ import com.erp.utilities.RetryAnalyzer;
 import com.erp.utilities.WaitHelper;
 
 public class TC02_LoginWithDataDriven extends BaseClass{
-	
 	 LoginPage loginPage;
 	 WaitHelper wait;
 
@@ -19,6 +18,7 @@ public class TC02_LoginWithDataDriven extends BaseClass{
 	    public void verifyLoginDDT(String user, String pass) {
 
 	    	loginPage = new LoginPage(getDriver());
+	    	
 	        wait = new WaitHelper(getDriver());
 	        Log.info("Executing User : " + user);
 
@@ -26,17 +26,15 @@ public class TC02_LoginWithDataDriven extends BaseClass{
 	        wait.waitForTitle("Forest Corporation");
 
 	        String actualTitle = getDriver().getTitle();
-
 	        Assert.assertEquals(actualTitle, "Forest Corporation", "Login Failed for : " + user);
 
-	        Log.info("Login Successful : " + user);
 	        loginPage.clickLogoutButton();
+	        Log.info("Login Successfull : " + user);
 	    }
 
 	    @DataProvider(name = "LoginData")
 	    public Object[][] getData() throws IOException {
 
 	        return B_ReadExcel.testData("login");
-
 	    }
 }

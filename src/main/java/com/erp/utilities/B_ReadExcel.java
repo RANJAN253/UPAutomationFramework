@@ -1,7 +1,6 @@
 package com.erp.utilities;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -9,7 +8,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class B_ReadExcel 
 {
 	public static Object[][] testData(String sheetName) throws IOException
-	
 	{
 		FileInputStream  fis = new FileInputStream("D:\\AutomationFramework\\UPAutomationFramework\\src\\main\\resources\\ForestDetails.xlsx");
 		
@@ -39,14 +37,8 @@ public class B_ReadExcel
 			    System.out.println(data[i][j]);
 			}
 		}
-		
 		workbook.close();
 		fis.close();
-		
 		return data;
-			
-		
 	}
-	
-
 }

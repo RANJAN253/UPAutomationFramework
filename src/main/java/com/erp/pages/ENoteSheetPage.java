@@ -20,106 +20,74 @@ public class ENoteSheetPage extends BaseClass {
 		wait = new WaitHelper(driver);
 	}  
 	// private By txtUsername = By.id("R_txtLogin");
-	private By notesheet_Module = By.xpath("//a[normalize-space()='E-Note Sheet']");
-	
-	@FindBy(linkText="E-Note Sheet")
-	WebElement enotesheet_masters;
-	
-	@FindBy(xpath="//a[contains(text(),'E-Note Sheet [New]')]")
-	WebElement notesheet_new;
-	
-	@FindBy(xpath="//input[@id='ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1']")
-	WebElement selectstatus;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_D_ddlFileCategory")
-	WebElement selectnotesheetcategory;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_D_ddlFileSubCategory")
-	WebElement selectnotesheetsubcategory;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_R_txtDocNo")
-	WebElement enterdocnumber;
-	
-	@FindBy(id ="ctl00_ContentPlaceHolder1_R_txtSubject")
-	WebElement entersubject;
-	
-	@FindBy(xpath = "//iframe[@title='Rich text editor, ctl00_ContentPlaceHolder1_txtdesc']")
-	WebElement notesheetdetail;
-	
-	@FindBy(xpath = "//iframe[@title='Rich text editor, ctl00_ContentPlaceHolder1_txtComment']")
-	WebElement notesheetcomment;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_flUploadFile")
-	WebElement fileupload;
-	
-	@FindBy(id ="ctl00_ContentPlaceHolder1_btnAddFile")
-	WebElement addButton;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_btnSave")
-	WebElement btnSubmit;
-	
-	@FindBy(linkText="E-Note Sheet Status [New]")
-	WebElement notesheetstatus;
-	
-	@FindBy(xpath="//a[@id='ctl00_ContentPlaceHolder1_dgPending_ctl02_lnkView']//img")
-	WebElement clickView;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1")
-	WebElement rdRecommended;
+	private By notesheet_Module       = By.xpath("//a[normalize-space()='E-Note Sheet']");
+	private By enotesheet_masters     = By.linkText("E-Note Sheet");
+	private By notesheet_new          = By.xpath("//a[contains(text(),'E-Note Sheet [New]')]");
+	private By selectstatus           = By.xpath("//input[@id='ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1']");
+	private By selectnotesheetcategoy = By.id("ctl00_ContentPlaceHolder1_D_ddlFileCategory");
+	private By selectnotesheetsubcat  = By.id("ctl00_ContentPlaceHolder1_D_ddlFileSubCategory");
+	private By enterdocnumber         = By.id("ctl00_ContentPlaceHolder1_R_txtDocNo");
+	private By entersubject           = By.id("ctl00_ContentPlaceHolder1_R_txtSubject");
+	private By notesheetdetail        = By.xpath("//iframe[@title='Rich text editor, ctl00_ContentPlaceHolder1_txtdesc']");
+	private By notesheetcomment       = By.xpath("//iframe[@title='Rich text editor, ctl00_ContentPlaceHolder1_txtComment']");
+	private By fileupload             = By.id("ctl00_ContentPlaceHolder1_flUploadFile");
+	private By addButton              = By.id("ctl00_ContentPlaceHolder1_btnAddFile");
+	private By btnSubmit              = By.id("ctl00_ContentPlaceHolder1_btnSave");
+	private By notesheetstatus        = By.linkText("E-Note Sheet Status [New]");
+	private By clickView              = By.xpath("//a[@id='ctl00_ContentPlaceHolder1_dgPending_ctl02_lnkView']//img");
+	private By rdRecommended          = By.id("ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_1");
+	private By rdConsent              = By.id("ctl00_ContentPlaceHolder1_rptDetails_ctl03_rdAppStatus_4");
+	private By rdRejected             = By.id("ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_5");
+	private By rdApproved             = By.id("ctl00_ContentPlaceHolder1_rptDetails_ctl06_rdAppStatus_1");
 
-	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl03_rdAppStatus_4")
-	WebElement rdConsent;
-	
-	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl02_rdAppStatus_5")
-	WebElement rdRejected;
-
-	@FindBy(id="ctl00_ContentPlaceHolder1_rptDetails_ctl06_rdAppStatus_1")
-	WebElement rdApproved;
 
 	public void clickOnModule() throws InterruptedException {
 	    wait.click(notesheet_Module);
 	}
 	  
-	public void Action() throws InterruptedException	{
+	public void Action() {
+		WebElement element = wait.waitForVisibility(enotesheet_masters);
 		Actions action= new Actions(driver);
-	  	action.moveToElement(enotesheet_masters).build().perform();
+	  	action.moveToElement(element).build().perform();
 	}
 	   
 	public void clickOnEnoteSheetNew() throws InterruptedException {
-		notesheet_new.click();
+		wait.click(notesheet_new);
 	}
 	
 	public void clickonViewNoteSheet() {
-		wait.waitForVisibility(clickView);
-		clickView.click();
+		wait.click(clickView);
 	}
 	
 	public void  clickOnRecOption()  {
-		selectstatus.click(); 
+		wait.click(selectstatus); 
 	}
 	
 	public void selectNoteSheetCategory(String notesheetcat) throws InterruptedException {
-	  Select sheetcat = new Select(selectnotesheetcategory);
+	  WebElement element = wait.waitForVisibility(selectnotesheetcategoy);
+	  Select sheetcat = new Select(element);
 	  sheetcat.selectByVisibleText(notesheetcat);
 	}
 	
 	public void	selectNoteSheetSubCatagory(String notesheetsubcat) throws  InterruptedException {
-		Select subcat = new Select(selectnotesheetsubcategory);
+		WebElement element = wait.waitForVisibility(selectnotesheetsubcat);
+		Select subcat = new Select(element);
 	    subcat.selectByVisibleText(notesheetsubcat);
 	}
 	
 	public void  enterDocNumber(String docnumber) throws InterruptedException {
-		enterdocnumber.sendKeys(docnumber);
+		wait.sendKeys(enterdocnumber,  docnumber);
 	}
 	
 	public void enterSubject(String subject) { 
-		entersubject.sendKeys(subject);
+		wait.sendKeys(entersubject,subject);
 	} 
 	
 	public void enterDetails(String	details)	{ 
-		//notesheetdetail.sendKeys(details);
 		wait.scrollToElement(notesheetdetail);
-	    driver.switchTo().frame(notesheetdetail);
+	    WebElement framelement =wait.waitForVisibility(notesheetdetail);
+	    driver.switchTo().frame(framelement);
+	    
 	    WebElement body = driver.findElement(By.tagName("body"));
 
 	    body.sendKeys(Keys.CONTROL + "a");
@@ -130,38 +98,37 @@ public class ENoteSheetPage extends BaseClass {
 	} 
 	
 	public void  enterComment(String comment) { 
-		//notesheetcomment.sendKeys(comment);
 		wait.scrollToElement(notesheetcomment);
-		driver.switchTo().frame(notesheetcomment);
+		WebElement framelement =wait.waitForVisibility(notesheetcomment);
+		driver.switchTo().frame(framelement);
 		WebElement body = driver.findElement(By.tagName("body"));
-		 body.sendKeys(Keys.CONTROL + "a");  // Focus inside editor
-		 body.sendKeys(Keys.DELETE);         //if supported  body.click(), body.clear()
-		 body.sendKeys(comment);
+		body.sendKeys(Keys.CONTROL + "a");  // Focus inside editor
+		body.sendKeys(Keys.DELETE);         //if supported  body.click(), body.clear()
+		body.sendKeys(comment);
 
-		 driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();
 	}
 	
 	public void uploadFile(String filepath) {
-		fileupload.sendKeys(filepath);
+		wait.sendKeys(fileupload,filepath);
 	}
 	
 	public void clickAddButton() {
-		addButton.click();
+		wait.click(addButton);
 	}
 		
 	public void clickOnSubmit() throws InterruptedException {
-		 wait.scrollToElement(btnSubmit);
+		 //wait.scrollToElement(btnSubmit);
 		 wait.click(btnSubmit);
 		//btnSubmit.click();
 	}
 	
 	public void clickOnNewStatus() {
-		notesheetstatus.click();
+		wait.click(notesheetstatus);
 	}
 	
-	public void clickOnView()
-	{
-		clickView.click();
+	public void clickOnView()	{
+		wait.click(clickView);
 	}
 	
 	public void selectApprovalAction(String action)
@@ -169,22 +136,22 @@ public class ENoteSheetPage extends BaseClass {
 	    switch(action.toLowerCase())
 	    {
 	        case "recommended":
-	        	wait.scrollToElement(rdRecommended);
+	        	//wait.scrollToElement(rdRecommended);
 	            wait.click(rdRecommended);
 	            break;
 
 	        case "consent":
-	        	wait.scrollToElement(rdConsent);
+	        	//wait.scrollToElement(rdConsent);
 	            wait.click(rdConsent);
 	            break;
 	            
 	        case "rejected":
-	        	wait.scrollToElement(rdApproved);
+	        	//wait.scrollToElement(rdApproved);
 	            wait.click(rdRejected);
 	            break;
  
 	        case "approved":
-	        	wait.scrollToElement(rdRejected);
+	        	//wait.scrollToElement(rdRejected);
 	            wait.click(rdApproved);
 	            break;
 
