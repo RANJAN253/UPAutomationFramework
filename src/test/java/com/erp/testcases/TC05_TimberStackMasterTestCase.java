@@ -2,6 +2,7 @@ package com.erp.testcases;
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.pages.TimberStackMasterPage;
 import com.erp.utilities.Log;
@@ -9,12 +10,12 @@ import com.erp.utilities.Log;
 public class TC05_TimberStackMasterTestCase extends BaseClass {
 	@Test
 	public void stackMaster() throws InterruptedException, IOException {
-		LoginPage lp = new LoginPage(getDriver());
+		LoginPage lp = new LoginPage(DriverFactory.getDriver());
 		lp.enterUsername(username);
 		lp.enterPassword(password);
 		lp.clickLoginButton();
 
-		TimberStackMasterPage stack = new TimberStackMasterPage(getDriver());
+		TimberStackMasterPage stack = new TimberStackMasterPage(DriverFactory.getDriver());
 		stack.selectLocation("Kursi Road Depot Lucknow [Depot]");
 	
 		Log.info("Selected Location");

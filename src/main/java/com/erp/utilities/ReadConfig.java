@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ReadConfig {
-	Properties prop;
+	private Properties prop;
 	
 	public ReadConfig()	{
 		File src = new File("./src/main/resources/config.properties");

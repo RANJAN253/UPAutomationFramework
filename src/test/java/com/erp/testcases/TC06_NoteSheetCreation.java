@@ -2,6 +2,7 @@ package com.erp.testcases;
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.ENoteSheetPage;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
@@ -13,13 +14,13 @@ public class TC06_NoteSheetCreation extends BaseClass {
 		
 		Log.info("========== E-Note Sheet Created ==========");
 		
-		LoginPage lp = new LoginPage(getDriver());
+		LoginPage lp = new LoginPage(DriverFactory.getDriver());
 		lp.enterUsername("dsmluc");
 		lp.enterPassword("123456");
 		lp.clickLoginButton();
 		Log.info("Login Successful");
 
-		ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
+		ENoteSheetPage notesheet = new ENoteSheetPage(DriverFactory.getDriver());
 		notesheet.clickOnModule();
 		Log.info("click on E-Note sheet Module");
 		
@@ -72,13 +73,13 @@ public class TC06_NoteSheetCreation extends BaseClass {
     public void recommendedE_NoteSheet() throws InterruptedException, IOException {
 		Log.info("========== E- Note Sheet Recommendation By Accountant ==========");
 		
-		LoginPage lp = new LoginPage(getDriver());
+		LoginPage lp = new LoginPage(DriverFactory.getDriver());
 		lp.enterUsername("ag3.2dsmlko");
 		lp.enterPassword("123456");
 		lp.clickLoginButton();
 		Log.info("Login Successful");
 
-		ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
+		ENoteSheetPage notesheet = new ENoteSheetPage(DriverFactory.getDriver());
 	
 		notesheet.clickOnModule();
 		Log.info("click on E-Note sheet");

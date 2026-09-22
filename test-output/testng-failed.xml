@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.erp.testcases.TC06_NoteSheetCreation">
+      <class name="com.erp.testcases.TC09_NoteSheetRecommendation">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="recommendedE_NoteSheet"/>
+          <include name="recommended_E_NoteSheet"/>
         </methods>
-      </class> <!-- com.erp.testcases.TC06_NoteSheetCreation -->
+      </class> <!-- com.erp.testcases.TC09_NoteSheetRecommendation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

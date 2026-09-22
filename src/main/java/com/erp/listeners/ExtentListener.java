@@ -9,14 +9,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.erp.reports.ExtentManagerReport;
 
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.utilities.ScreenshotUtility;
 import com.erp.utilities.Log;
 
 public class ExtentListener implements ITestListener {
 	
 	private ExtentReports extent ;
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // Thread-safe ExtentTest object //OR
-    //private ExtentTest test;
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>(); // Thread-safe ExtentTest object //OR //private ExtentTest test;
 
     @Override
     public void onStart(ITestContext context) {
@@ -47,7 +47,7 @@ public class ExtentListener implements ITestListener {
     	test.get().info("Test Name : " + result.getMethod().getMethodName());
     	
     	 try {
-    		 String screenshotPath = ScreenshotUtility.captureScreenshot(BaseClass.getDriver(),result.getMethod().getMethodName());
+    		 String screenshotPath = ScreenshotUtility.captureScreenshot(DriverFactory.getDriver(),result.getMethod().getMethodName());
     	     test.get().addScreenCaptureFromPath(screenshotPath);
     	     
     	    } catch (Exception e) {

@@ -9,34 +9,55 @@ public class B_ReadExcel
 {
 	public static Object[][] testData(String sheetName) throws IOException
 	{
-		FileInputStream  fis = new FileInputStream("D:\\AutomationFramework\\UPAutomationFramework\\src\\main\\resources\\ForestDetails.xlsx");
+		String filepath = System.getProperty("user.dir") + "/src/main/resources/ForestDetails.xlsx";
+		FileInputStream  fis = new FileInputStream("filePath");
 		
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet(sheetName);
-		//XSSFSheet sheet = wb.getSheetAt(0);   // for index sheet  case
+		
+		if (sheet == null) {
+			workbook.close();
+			fis.close();
 			
-		int rowcount = sheet.getLastRowNum();     //System.out.println(sheet.getLastRowNum());
-	    System.out.println(rowcount);
+			throw new IllegalArgumentException("Sheet not found: " + sheetName);
+		}
+		
+		// ======================================================
+		// ROW & COLUMN COUNT 
+		// ======================================================
+			
+		int rowcount = sheet.getLastRowNum();     
+	    System.out.println("Total Rows : " + rowcount);
 		     
-		int colcount = sheet.getRow(0).getLastCellNum();   //System.out.println(sheet.getRow(0).getLastCellNum());
-		System.out.println(colcount);
+		int colcount = sheet.getRow(0).getLastCellNum();  
+		System.out.println("Total Rows : " + colcount);
+		
+		// ======================================================
+		// DATA ARRAY
+		// ======================================================
 						
 		String [][] data = new String[ rowcount][colcount];
 		
-		 // IMPORTANT
+		// IMPORTANT
         DataFormatter formatter = new DataFormatter();
+        
+        // ======================================================
+        // READ EXCEL DATA 
+        // ======================================================
 		
 		for(int i=0; i<rowcount; i++)
 		{
 			for(int j=0; j<colcount; j++)
 			{
-			   // data [i][j] = sheet.getRow(i+1).getCell(j).getStringCellValue();
-			   // System.out.println(data[i][j]);
-			    
-			    data[i][j] = formatter.formatCellValue(sheet.getRow(i+1).getCell(j));
-			    System.out.println(data[i][j]);
+			   data[i][j] = formatter.formatCellValue(sheet.getRow(i+1).getCell(j)).trim();
+			   System.out.println("Row" + (i+1) + " Column" + j + " = " + data[i][j]);
 			}
 		}
+		
+		// ====================================================== 
+		// CLOSE 
+		// ======================================================
+		
 		workbook.close();
 		fis.close();
 		return data;

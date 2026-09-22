@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.B_ReadExcel;
 import com.erp.utilities.Log;
@@ -17,15 +18,15 @@ public class TC02_LoginWithDataDriven extends BaseClass{
 	    @Test(dataProvider = "LoginData",retryAnalyzer = RetryAnalyzer.class)
 	    public void verifyLoginDDT(String user, String pass) {
 
-	    	loginPage = new LoginPage(getDriver());
+	    	loginPage = new LoginPage(DriverFactory.getDriver());
 	    	
-	        wait = new WaitHelper(getDriver());
+	        wait = new WaitHelper(DriverFactory.getDriver());
 	        Log.info("Executing User : " + user);
 
 	        loginPage.loginWith(user, pass);
 	        wait.waitForTitle("Forest Corporation");
 
-	        String actualTitle = getDriver().getTitle();
+	        String actualTitle = DriverFactory.getDriver().getTitle();
 	        Assert.assertEquals(actualTitle, "Forest Corporation", "Login Failed for : " + user);
 
 	        loginPage.clickLogoutButton();

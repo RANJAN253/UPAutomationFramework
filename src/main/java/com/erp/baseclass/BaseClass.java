@@ -10,28 +10,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+import com.erp.driver.DriverFactory;
 import com.erp.utilities.Log;
 import com.erp.utilities.ReadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	//public static WebDriver driver;
-	
 	ReadConfig readconfig=new ReadConfig();
 	
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getUsername();
 	public String password=readconfig.getPassword();
-	
-	public static WebDriver getDriver() {  
-	    return driver.get();
-	}
-
-	public static void setDriver(WebDriver webDriver) {  
-	    driver.set(webDriver);
-	}
 	
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
@@ -56,15 +47,15 @@ public class BaseClass {
 
 		    options.setExperimentalOption("prefs", prefs);
 		    
-		    setDriver(new ChromeDriver(options));  
+		    DriverFactory.setDriver(new ChromeDriver(options));  
 		    
 		} else if(br.equalsIgnoreCase("firefox")) {
 		  WebDriverManager.firefoxdriver().setup();
-		   setDriver(new FirefoxDriver());  // For Thread
+		  DriverFactory.setDriver(new FirefoxDriver());  // For Thread
 		  
 		}  else if (br.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			setDriver(new EdgeDriver());   // Thread 
+			DriverFactory.setDriver(new EdgeDriver());   // Thread 
 			
 		} else {
 			
@@ -72,11 +63,13 @@ public class BaseClass {
 		}
 		
 		Log.info("Launching " + br + " browser");
-			 
-		getDriver().manage().window().maximize();  
-		getDriver().manage().deleteAllCookies();
 		
-		getDriver().get(baseURL);	  
+		WebDriver driver = DriverFactory.getDriver();
+			 
+		driver.manage().window().maximize();  
+		driver.manage().deleteAllCookies();
+		
+		driver.get(baseURL);	  
 		Log.info("Application URL : " + baseURL);
 				 
 		} catch (Exception e ){
@@ -87,9 +80,6 @@ public class BaseClass {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown()	{
 		Log.info("Closing Browser");
-		if(getDriver()!=null) {  // Thread
-			getDriver().quit();
-			driver.remove();
-		}
-	} 
+		DriverFactory.quitDriver();
+	}
 }

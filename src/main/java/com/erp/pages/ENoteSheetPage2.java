@@ -7,17 +7,19 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import com.erp.baseclass.BaseClass;
+import com.erp.utilities.Log;
 import com.erp.utilities.WaitHelper;
 
-public class ENoteSheetPage extends BaseClass {
+public class ENoteSheetPage2 extends BaseClass {
 	WebDriver driver;
 	WaitHelper wait;
+	Log log;
 	
 	// ========================================================== 
 	// CONSTRUCTOR 
 	// ==========================================================
 
-	public ENoteSheetPage(WebDriver rdriver) 	{ //constructor
+	public ENoteSheetPage2(WebDriver rdriver) 	{ //constructor
 		driver = rdriver;
 		PageFactory.initElements(rdriver, this);
 		wait = new WaitHelper(driver);
@@ -133,15 +135,13 @@ public class ENoteSheetPage extends BaseClass {
 	}
 		
 	public void clickOnSubmit() throws InterruptedException {
-		 //wait.scrollToElement(btnSubmit);
-		 wait.click(btnSubmit);
-		//btnSubmit.click();
+		wait.click(btnSubmit);
 	}
 	
 	// ========================================================== 
 	// DYNAMIC APPROVAL ACTION 
 	// ==========================================================
-	public void selectApprovalAction(String action)
+	public void selectApprovalAction(int level, String action)
 	{
 		action = action.toLowerCase().trim();
 		
@@ -150,29 +150,80 @@ public class ENoteSheetPage extends BaseClass {
 		// ======================================================
 		
 		
-		if(action.equals("approved")) {
-	    switch(action.toLowerCase())
-	    {
-	        case "recommended":
-	        	wait.click(rdRecommended);
-	            break;
-
-	        case "consent":
-	        	 wait.click(rdConsent);
-	             break;
-	            
-	        case "rejected":
-	        	wait.click(rdRejected);
-	            break;
- 
-	        case "approved":
-	        	//wait.scrollToElement(rdRejected);
-	            wait.click(rdApproved);
-	            break;
-	        
-	        default:
-	            throw new IllegalArgumentException("Invalid Action : " + action);
-	    }
+		if (action.equals("approved")) { 
+			selectApproved();
+			return; 
 		}
+		
+		// ====================================================== /
+		// ACTION INDEX 
+		// ======================================================
+		
+		int actionIndex;
+		
+		switch (action) {
+		case "under consideration":
+			actionIndex = 0;
+			break;
+			
+		case "recommended":
+			actionIndex = 1;
+			break;
+			
+		case "not recommended":
+			actionIndex = 2;
+			break;
+			
+		case "compliance": 
+			actionIndex = 3; 
+			break;
+		
+		case "consent": 
+			actionIndex = 4; 
+			break;
+		
+		case "rejected": 
+			actionIndex = 5; 
+			break;
+		
+		case "need modification": 
+			actionIndex = 6; 
+			break;
+		case "query": 
+			actionIndex = 7; 
+			break;
+		
+		default: throw new IllegalArgumentException( "Invalid Action : " + action );
+		}
+		
+		// ====================================================== 
+	    // VALIDATE LEVEL 
+	    // ======================================================
+	
+		if (level < 2 || level > 7) { 
+			throw new IllegalArgumentException("Invalid Approval Level : " 	+ level + ". Valid levels are 2 to 7." ); 
+		}
+		
+		// ====================================================== 
+		// CREATE DYNAMIC ID 
+		// ====================================================== 
+		
+		String elementId = String.format( "ctl00_ContentPlaceHolder1_rptDetails_ctl%02d_rdAppStatus_%d", level, actionIndex );
+		By locator = By.id(elementId);
+
+		Log.info( "Selecting Approval Action" + " | Level : " + level + " | Action : " + action + " | Locator : " + elementId );
+
+		//====================================================== 
+		// YOUR EXISTING WAITHELPER 
+		// ======================================================
+
+		wait.click(locator);
 	}
+	
+	private void selectApproved() { 
+		By approvedLocator = By.xpath( "//label[normalize-space()='Approved']" );
+		Log.info( "Selecting Approved Action" ); 
+		wait.click( approvedLocator ); 
+	}
+		
 }

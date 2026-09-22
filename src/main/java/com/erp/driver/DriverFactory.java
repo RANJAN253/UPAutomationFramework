@@ -13,8 +13,11 @@ public class DriverFactory {
 		 driver.set(webDriver);
 	 }
 	 
-	 public static void unload() {
-		 driver.remove();
+	 public static void quitDriver() {
+		 if (driver.get() != null) {
+		        driver.get().quit();
+		        driver.remove();
+		    }
 	 }
 
 }

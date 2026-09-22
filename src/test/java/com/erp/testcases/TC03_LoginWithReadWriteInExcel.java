@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 import com.erp.utilities.ReadFromExcel;
@@ -18,9 +19,9 @@ public class TC03_LoginWithReadWriteInExcel extends BaseClass {
 	@Test(dataProvider = "LoginData", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyLoginDDT(String username, String password, String status, int rowNo) throws Exception {
 		
-		loginPage = new LoginPage(getDriver());
+		loginPage = new LoginPage(DriverFactory.getDriver());
 		
-	    wait = new WaitHelper(getDriver());
+	    wait = new WaitHelper(DriverFactory.getDriver());
 	    
         Log.info("Executing Row : " + rowNo);
         
@@ -30,7 +31,7 @@ public class TC03_LoginWithReadWriteInExcel extends BaseClass {
         
         try {
         	wait.waitForTitle("Forest Corporation");
-        	if(getDriver().getTitle().contains("Forest Corporation")) {
+        	if(DriverFactory.getDriver().getTitle().contains("Forest Corporation")) {
         		loginSuccess = true;
         		
         		loginPage.clickLogoutButton();

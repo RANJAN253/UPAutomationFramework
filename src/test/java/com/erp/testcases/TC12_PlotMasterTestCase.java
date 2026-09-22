@@ -3,6 +3,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.pages.PlotMasterPage;
 import com.erp.utilities.Log;
@@ -16,7 +17,7 @@ public class TC12_PlotMasterTestCase extends BaseClass {
 		Log.info("********** Plot Master Test Started **********");
 		
 		 // Login
-        LoginPage lp = new LoginPage(getDriver());
+        LoginPage lp = new LoginPage(DriverFactory.getDriver());
         
 		lp.enterUsername(username);
 		Log.info("Entered Username");
@@ -52,7 +53,7 @@ public class TC12_PlotMasterTestCase extends BaseClass {
         Log.info("Plot Details Entered Successfully");
 
         // Validation
-        String title = getDriver().getTitle();
+        String title = DriverFactory.getDriver().getTitle();
 
         if (title.contains("Record Saved Successfully")) {
 
@@ -63,7 +64,7 @@ public class TC12_PlotMasterTestCase extends BaseClass {
 
         	Log.error("Plot Master Entry Failed");
 
-            ScreenshotUtility.captureScreenshot(getDriver(), "addPlotMaster");
+            ScreenshotUtility.captureScreenshot(DriverFactory.getDriver(), "addPlotMaster");
            
             Assert.fail("Record Not Saved");
         }

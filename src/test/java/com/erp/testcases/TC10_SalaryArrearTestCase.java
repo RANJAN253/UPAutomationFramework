@@ -1,6 +1,7 @@
 package com.erp.testcases;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.pages.SalaryArrearPages;
 import com.erp.utilities.Log;
@@ -17,8 +18,8 @@ public class TC10_SalaryArrearTestCase extends BaseClass {
     	
     	Log.info("========== Salary Arrear Test Started ==========");
 
-        loginPage = new LoginPage(getDriver());
-        wait = new WaitHelper(getDriver());
+        loginPage = new LoginPage(DriverFactory.getDriver());
+        wait = new WaitHelper(DriverFactory.getDriver());
 
         // Login
         loginPage.loginWith(username, password);
@@ -26,7 +27,7 @@ public class TC10_SalaryArrearTestCase extends BaseClass {
         Log.info("Login Successful");
         
         // Open Salary Arrear Page
-        salarrear = new SalaryArrearPages(getDriver());
+        salarrear = new SalaryArrearPages(DriverFactory.getDriver());
         salarrear.clickPersonelModule();
         salarrear.openSalaryArrear();
         Log.info("Salary Arrear Master Page Opened");

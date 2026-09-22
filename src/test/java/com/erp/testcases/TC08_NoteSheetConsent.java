@@ -2,6 +2,7 @@ package com.erp.testcases;
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.ENoteSheetPage;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
@@ -12,14 +13,14 @@ public class TC08_NoteSheetConsent extends BaseClass{
 	public void consentE_NoteSheet() throws InterruptedException, IOException {
 		Log.info("========== E-Note Sheet Test Consent ==========");
 		
-		LoginPage lp = new LoginPage(getDriver());
-		//lp.loginWith("ag3.2dsmlko", "123456");
+		LoginPage lp = new LoginPage(DriverFactory.getDriver());
+		
 		lp.enterUsername("cao");
 		lp.enterPassword("123456");
 		lp.clickLoginButton();
 		Log.info("Login Successful");
 
-		ENoteSheetPage notesheet = new ENoteSheetPage(getDriver());
+		ENoteSheetPage notesheet = new ENoteSheetPage(DriverFactory.getDriver());
 		
 		notesheet.clickOnModule();
 		Log.info("click on E-Note sheet");
@@ -29,7 +30,7 @@ public class TC08_NoteSheetConsent extends BaseClass{
 		Log.info("Open on E-Note sheet Status");
 		
 		notesheet.clickOnView();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		//System.out.println(getDriver().getPageSource().contains("ctl03_rdAppStatus_4"));
 		//System.out.println(getDriver().getCurrentUrl());
 		Log.info("click on view Notesheet");

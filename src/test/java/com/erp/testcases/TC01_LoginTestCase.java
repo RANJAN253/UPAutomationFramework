@@ -2,6 +2,7 @@ package com.erp.testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.pages.LoginPage;
 import com.erp.utilities.Log;
 import com.erp.utilities.RetryAnalyzer;
@@ -17,8 +18,8 @@ public class TC01_LoginTestCase extends BaseClass
     	
     	Log.info("=========== LOGIN TEST STARTED ===========");
     	
-    	loginPage = new LoginPage(getDriver());
-        wait = new WaitHelper(getDriver());
+    	loginPage = new LoginPage(DriverFactory.getDriver());
+        wait = new WaitHelper(DriverFactory.getDriver());
 
         loginPage.loginWith(username, password);
         Log.info("Entered Username : " + username);
@@ -26,7 +27,7 @@ public class TC01_LoginTestCase extends BaseClass
         // Wait for Dashboard Title
         wait.waitForTitle("Forest Corporation");
 
-        String actualTitle = getDriver().getTitle();
+        String actualTitle = DriverFactory.getDriver().getTitle();
         String expectedTitle = "Forest Corporation";
         
         Log.info("Actual Title : " + actualTitle);

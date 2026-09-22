@@ -1,13 +1,12 @@
 package com.erp.pages;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import com.erp.baseclass.BaseClass;
+import com.erp.driver.DriverFactory;
 import com.erp.utilities.WaitHelper;
 
 public class PlotMasterPage extends BaseClass
@@ -50,8 +49,8 @@ public class PlotMasterPage extends BaseClass
 	 // Constructor
 	 public PlotMasterPage() {
 
-	     PageFactory.initElements(getDriver(), this);
-	     waithelper = new WaitHelper(getDriver());
+	     PageFactory.initElements(DriverFactory.getDriver(), this);
+	     waithelper = new WaitHelper(DriverFactory.getDriver());
 	 }
 
 	 public void selectLocation(String location) {
@@ -69,7 +68,7 @@ public class PlotMasterPage extends BaseClass
 	    // Click Plot Master
 	    public void clickPlotMaster() {
 
-	        Actions action = new Actions(getDriver());
+	        Actions action = new Actions(DriverFactory.getDriver());
 	        action.moveToElement(masters).perform();
 
 	        waithelper.click(plot_master);
